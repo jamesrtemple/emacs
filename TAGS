@@ -1,0 +1,22 @@
+
+init.el,29
+(defun create-tags 146,5574
+
+init.el~,364
+>>(custom-set-variablesvariables1,0
+(custom-set-facesfaces9,414
+;; Color Themes38,1526
+;(color-theme-initialize)initialize45,1698
+;(color-theme-scintilla)scintilla46,1725
+;; yasnippet99,2969
+;; auto complete mode106,3169
+;; set the trigger key so that it can work together with yasnippet on tab key,112,3479
+;; changing the command to control134,4044
+
+recentf,73
+;; Local Variables:Variables13,327
+;; coding: utf-8-emacsemacs14,347
+
+ac-comphist.dat,0
+
+README.md,0
