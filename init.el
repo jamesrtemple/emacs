@@ -36,8 +36,7 @@
 ;;MELPA
 ;;
 (require 'package)
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 
@@ -107,6 +106,13 @@
 
 
 ;;--------------------------------------------------------------------------------------------------------------
+;;NEOTREE
+;;
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+
+;;--------------------------------------------------------------------------------------------------------------
 ;;JAVASCRIPT
 ;;
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
@@ -130,6 +136,8 @@
 ;;  Loaded before auto complete so that they can work together
 ;;
 (require 'yasnippet)
+(setq helm-yas-space-match-any-greedy t)
+(global-set-key (kbd "C-c y") 'helm-yas-complete)
 (yas-global-mode 1)
 
 
