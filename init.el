@@ -47,6 +47,14 @@
 
 
 ;;--------------------------------------------------------------------------------------------------------------
+;;WIN-SWITCH
+;;
+(require 'win-switch)
+(global-set-key (kbd "C-x o") 'win-switch-dispatch)
+(setq win-switch-window-threshold 1)
+
+
+;;--------------------------------------------------------------------------------------------------------------
 ;;ORG
 ;;
 (setq org-startup-with-inline-images t)
@@ -57,6 +65,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-tags-column 70)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 
 ;;--------------------------------------------------------------------------------------------------------------
