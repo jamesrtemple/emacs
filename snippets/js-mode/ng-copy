@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ng-copy
+# key: ng-copy
+# binding: direct-keybinding
+# --
+angular.copy(${1:source});$0

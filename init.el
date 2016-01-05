@@ -1,9 +1,6 @@
-;;----------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
 ;;
-(set-face-attribute 'default t                   ;;Setup default font face
-		    :font "Menlo Regular-14" )
-
 (setq ansi-color-names-vector                    ;;What does this do? Copied from customize section.
       ["#2e3436" "#a40000" "#4e9a06" "#c4a000"
        "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
@@ -14,12 +11,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-(setenv "PATH"                                   ;;Setup my path to include local bin directories
-      (concat "/usr/local/bin:/usr/local/sbin:"
-              (getenv "PATH")))
-(setq exec-path (append exec-path '("/usr/local/bin")))
-
-(add-to-list 'load-path "~/.emacs.d/lisp")       ;;Tell Emacs where to find my lisp scripts
 (setq inhibit-startup-message t)                 ;;No start screen
 (scroll-bar-mode 0)                              ;;Set Scroll bars on or off
 (tool-bar-mode 0)                                ;;Set toolbar off
@@ -28,11 +19,28 @@
 	     "~/.emacs.d/themes")
 (load-theme 'ample t)
 (global-visual-line-mode)                        ;;Make line wrap act good
-(setq mac-command-modifier 'control)             ;;Change the left command key to control
-(setq mac-right-command-modifier 'meta)          ;;Change the right command key to meta
 
 
-;;----------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
+;;MAC SPECIFIC SETTINGS
+;;
+(if (eq system-type 'darwin)
+    (progn
+       (set-face-attribute 'default nil :font "Menlo Regular-13")
+       (setenv "PATH" (concat "/usr/local/bin:/usr/local/sbin:" (getenv "PATH")))
+       (setq exec-path (append exec-path '("/usr/local/bin")))
+       (setq mac-command-modifier 'control)
+       (setq mac-right-command-modifier 'meta)))
+
+
+;;------------------------------------------------------------------------------------------------------
+;;WINDOWS SPECIFIC SETTINGS
+;;
+(if (eq system-type 'windows-nt)
+    (set-face-attribute 'default nil :font "Lucida Console-11.5"))
+
+
+;;------------------------------------------------------------------------------------------------------
 ;;MELPA
 ;;
 (require 'package)
@@ -40,21 +48,22 @@
 (package-initialize)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;TEXT
 ;;
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;WIN-SWITCH
 ;;
 (require 'win-switch)
 (global-set-key (kbd "C-x o") 'win-switch-dispatch)
 (setq win-switch-window-threshold 1)
+(setq win-switch-idle-time 15)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;ORG
 ;;
 (setq org-startup-with-inline-images t)
@@ -68,14 +77,14 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;MARKDOWN
 ;;
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-(setq markdown-command "/usr/local/bin/pandoc")
+;(setq markdown-command "/usr/local/bin/pandoc")
 ;;(set-face-attribute 'markdown-header-face nil
 ;; :inherit markdown-header-face
 ;; :height 2.0)
@@ -87,41 +96,41 @@
 ;; :height 1.4)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;PANDOC
 ;;
 (load "pandoc-mode")
 (add-hook 'markdown-mode-hook 'pandoc-mode)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;IBUFFER
 ;;
 (global-set-key "\C-x\C-b" 'ibuffer)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;POWERLINE
 ;;
 (require 'powerline)
 (powerline-vim-theme)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;HELM
 ;;
 (require 'helm-config)
 (helm-mode 1)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;NEOTREE
 ;;
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;JAVASCRIPT
 ;;
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
@@ -140,17 +149,18 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;YASNIPPET
 ;;  Loaded before auto complete so that they can work together
 ;;
 (require 'yasnippet)
 (setq helm-yas-space-match-any-greedy t)
-(global-set-key (kbd "C-c y") 'helm-yas-complete)
+(global-set-key (kbd "M-s M-s") 'helm-yas-complete)
+(global-set-key (kbd "M-s s") 'yas-expand)
 (yas-global-mode 1)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;AUTO COMPLETE
 ;;  Loaded after yasnippet so that they can work together
 ;;  Sets trigger to work with yasnippet on tab. If word in yasnippet, tab activates yasnippet.
@@ -163,7 +173,7 @@
 (put 'dired-find-alternate-file 'disabled nil)
 
 
-;;--------------------------------------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------------------------------
 ;;TERN
 ;; 
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))

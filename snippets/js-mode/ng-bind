@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ng-bind
+# key: ng-bind
+# binding: direct-keybinding
+# --
+angular.bind(${1:self}, ${2:function}, ${3:args});$0

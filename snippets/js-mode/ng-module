@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ng-module
+# key: ng-module
+# binding: direct-keybinding
+# --
+angular.module('$1', []);$0

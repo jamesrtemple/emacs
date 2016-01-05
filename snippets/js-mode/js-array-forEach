@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: js-array-forEach
+# key: js-forEach
+# binding: direct-keybinding
+# --
+${1:arr}.forEach(function(elt, i) {
+    $0
+});

@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: js-array-map
+# key: js-map
+# binding: direct-keybinding
+# --
+${1:arr}.map(function(${2:elem}) {
+    $0
+});

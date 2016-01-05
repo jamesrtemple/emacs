@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ng-element
+# key: ng-element
+# binding: direct-keybinding
+# --
+angluar.element(${1:query});$0

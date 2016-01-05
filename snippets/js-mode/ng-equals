@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ng-equals
+# key: ng-equals
+# binding: direct-keybinding
+# --
+angular.equals($1, $2);$0
