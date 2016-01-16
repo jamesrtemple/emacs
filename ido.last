@@ -1,0 +1,58 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/" . "Users/")
+ ("/Users/jamesrtemple/.emacs.d/elpa/" . "expand-region-20150902.558/")
+ ("/Users/jamesrtemple/.emacs.d/" . "elpa/")
+ ("/Users/jamesrtemple/" . ".emacs.d/")
+ ("/Users/" . "jamesrtemple/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/jamesrtemple/.emacs.d/"
+ "/Users/jamesrtemple/Desktop/"
+ "/Users/jamesrtemple/.emacs.d/elpa/expand-region-20150902.558/"
+ "/Users/jamesrtemple/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "tmp.js"
+ "expand-region.el"
+ ".em"
+ "js-refactor-keys.txt"
+ "des"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/jamesrtemple/.emacs.d/" (22169 52041 0 0) "url/" "themes/" "TAGS" "snippets/" "smex-items" "recentf" "README.md" "lisp/" "init.el~" "init.el" "ido.last" "idlwave/" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/elpa/" (22169 51284 0 0) "yasnippet-readme.txt" "yasnippet-20160104.129/" "with-editor-20160115.1233/" "win-switch-20150208.1911/" "web-beautify-20131118.226/" "tern-auto-complete-20151123.653/" "tern-20151228.511/" "sr-speedbar-20150804.951/" "smooth-scrolling-20131219.2039/" "smex-20151212.1409/" "skewer-mode-20150914.1304/" "simple-httpd-20150430.1755/" "seq-1.11/" "s-20160115.58/" "rainbow-delimiters-20150320.17/" "powerline-readme.txt" "powerline-20151008.1449/" "popup-20151222.1339/" "pkg-info-20150517.443/" "pandoc-mode-readme.txt" "pandoc-mode-20151030.313/" "org-bullets-20140918.1137/" "octicons-readme.txt" "neotree-20160111.2358/" "multiple-cursors-20151205.1225/" "markdown-mode-20160115.1746/" "main-line-readme.txt" "magit-readme.txt" "magit-popup-20160107.437/" "magit-20160115.1613/" "let-alist-1.0.4/" "js2-refactor-20151029.507/" "js2-mode-20160109.148/" "indent-guide-20151119.717/" "ido-vertical-mode-20151003.1833/" "ido-ubiquitous-readme.txt" "ido-ubiquitous-20160115.1626/" "ido-completing-read+-20151219.836/" "hydra-20151214.417/" "helm-spotify-readme.txt" "helm-core-20160113.2347/" "helm-c-yasnippet-readme.txt" "helm-c-yasnippet-20151231.10/" "helm-ad-readme.txt" "helm-20160115.505/" "gnupg/" "git-commit-20160112.1109/" "flycheck-20160114.1250/" "expand-region-20150902.558/" "epl-20150517.433/" "dash-20151216.1315/" "control-mode-readme.txt" "control-mode-20140218.607/" "auto-complete-readme.txt" "auto-complete-chunk-readme.txt" "auto-complete-20160107.8/" "async-20160108.1249/" "archives/" "ac-js2-20140906.442/" "../" "./")
+
+ ("/Applications/" (22167 65211 0 0) "Xcode.app/" "WiFi Explorer.app/" "WebStorm.app/" "Utilities/" "Tweetbot.app/" "Time Machine.app/" "The Clock.app/" "TextEdit.app/" "System Preferences.app/" "Stickies.app/" "SpamSieve.app/" "Smart Converter Pro 2.app/" "Skype.app/" "Scrivener.app/" "ScaleMaster.app/" "Safari.app/" "Reminders.app/" "Reeder.app/" "QuickTime Player.app/" "Preview.app/" "Pocket.app/" "Pixelmator.app/" "Pimp Your Screen.app/" "Photos.app/" "Photo Booth.app/" "Parallels Desktop.app/" "Paprika Recipe Manager.app/" "Pages.app/" "Numbers.app/" "Notes.app/" "NetworkUtilityX.app/" "NetBeans/" "MPlayerX.app/" "Mission Control.app/" "Messages.app/" "Maps.app/" "Mail.app/" "Mahjong Solitaire Epic.app/" "Leaf.app/" "Launchpad.app/" "Knights of the Old Republic.app/" "Kindle.app/" "Keynote.app/" "iTunes.app/" "iRehearse.app/" "iReal Pro.app/" "IntelliJ IDEA 15.app/" "iMovie.app/" "Image Capture.app/" "iBooks.app/" "iBank 5.app/" "HyperDock.app/" "GPG Keychain.app/" "Google Chrome.app/" "GarageBand.app/" "Game Center.app/" "Full Deck Solitaire.app/" "Font Book.app/" "Flashcard Hero.app/" "Firefox.app/" "FingerWorks.app/" "FaceTime.app/" "Evernote.app/" "Epson Software/" "Emacs.app/" "EarMaster Pro 6.app/" "DVD Player.app/" "Duplicate Detective.app/" "DM1.app/" "Disk Doctor.app/" "Dictionary.app/" "Day One.app/" "Dashboard.app/" "Dash.app/" "Contacts.app/" "Commander One PRO.app/" "Clear Day.app/" "Citrix Receiver.app/" "ChordMate.app/" "Chess.app/" "Chess Deluxe.app/" "Calendar.app/" "Calculator.app/" "Caffeine.app/" "Byword.app/" "BetterSnapTool.app/" "Bejeweled 3.app/" "Backgammon Masters - Beginner edition.app/" "Automator.app/" "App Store.app/" "Amarra sQ/" "Adobe Photoshop Lightroom 5.app/" "1Password.app/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Applications/Emacs.app/" (21800 6412 0 0) "Contents/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/" (21802 54286 0 0) "Resources/" "PkgInfo" "MacOS/" "Info.plist" "_CodeSignature/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/MacOS/" (21802 54270 0 0) "libexec-x86_64-10_9/" "libexec-x86_64-10_7/" "libexec-x86_64-10_5/" "libexec-powerpc-10_4/" "libexec-i386-10_5/" "libexec/" "Emacs-x86_64-10_9" "Emacs-x86_64-10_7" "Emacs-x86_64-10_5" "Emacs-powerpc-10_4" "Emacs-i386-10_5" "Emacs" "bin-x86_64-10_9/" "bin-x86_64-10_7/" "bin-x86_64-10_5/" "bin-powerpc-10_4/" "bin-i386-10_5/" "bin/" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/idlwave/" (21692 7106 0 0) "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/elpa/expand-region-20150902.558/" (22150 2880 0 0) "web-mode-expansions.elc" "web-mode-expansions.el" "the-org-mode-expansions.elc" "the-org-mode-expansions.el" "text-mode-expansions.elc" "text-mode-expansions.el" "subword-mode-expansions.elc" "subword-mode-expansions.el" "sml-mode-expansions.elc" "sml-mode-expansions.el" "ruby-mode-expansions.elc" "ruby-mode-expansions.el" "python-mode-expansions.elc" "python-mode-expansions.el" "python-el-fgallina-expansions.elc" "python-el-fgallina-expansions.el" "python-el-expansions.elc" "python-el-expansions.el" "octave-expansions.elc" "octave-expansions.el" "nxml-mode-expansions.elc" "nxml-mode-expansions.el" "latex-mode-expansions.elc" "latex-mode-expansions.el" "jsp-expansions.elc" "jsp-expansions.el" "js2-mode-expansions.elc" "js2-mode-expansions.el" "js-mode-expansions.elc" "js-mode-expansions.el" "html-mode-expansions.elc" "html-mode-expansions.el" "feature-mode-expansions.elc" "feature-mode-expansions.el" "expand-region.elc" "expand-region.el" "expand-region-pkg.el" "expand-region-custom.elc" "expand-region-custom.el" "expand-region-core.elc" "expand-region-core.el" "expand-region-autoloads.el" "erlang-mode-expansions.elc" "erlang-mode-expansions.el" "er-basic-expansions.elc" "er-basic-expansions.el" "enh-ruby-mode-expansions.elc" "enh-ruby-mode-expansions.el" "css-mode-expansions.elc" "css-mode-expansions.el" "cperl-mode-expansions.elc" "cperl-mode-expansions.el" "clojure-mode-expansions.elc" "clojure-mode-expansions.el" "cc-mode-expansions.elc" "cc-mode-expansions.el" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/themes/" (22152 50462 0 0) "zenburn-theme.el" "wilson-theme.el" "sublime-themes.el" "spolsky-theme.el" "ritchie-theme.el" "odersky-theme.el" "mccarthy-theme.el" "mbo70s-theme.el" "leuven-theme.el" "junio-theme.el" "hickey-theme.el" "granger-theme.el" "graham-theme.el" "fogus-theme.el" "dorsey-theme.el" "brin-theme.el" "ample-zen-theme.el" "ample-theme.el" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/" (22165 52093 0 0) "winswitch.org" "tmp.js" "Thumbs.db" "Old Firefox Data/" "main-qimg-96300ce2cde62db67286aac46db03e16.jpg" "js-refactor-keys.txt" "Family Photos 2014/" "EM-K61A-33010.exe" "Dragon.docx" "desktop.ini" "Atom.app/" ".tern-port" ".localized" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/" (22029 51308 0 0) "Shared/" "jamesrtemple/" "Guest/" "admin/" ".localized" "../" "./")
+
+ ("/Users/jamesrtemple/" (22156 37849 0 0) "WebstormProjects/" "Public/" "Pictures/" "NetBeansProjects/" "Music/" "Movies/" "Library/" "iCloud/" "Downloads/" "Documents/" "Desktop/" "Applications (Parallels)/" "Applications/" ".WebStorm11/" ".WebStorm10/" ".viminfo" ".Trash/" ".sh_history" ".oracle_jre_usage/" ".npm/" ".node-gyp/" ".netbeans-derby/" ".m2/" ".local/" ".lesshst" ".gnupg/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
