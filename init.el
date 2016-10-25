@@ -22,8 +22,6 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'junio t)
 
-;;Move set mark to something easy that doesn't interfere with spotlight
-(global-set-key (kbd "C-,") 'set-mark-command)
 
 ;;MELPA
 (require 'package)
@@ -52,8 +50,8 @@
 
 
 ;; BUFFER SWITCHING
-(global-set-key (kbd "C-.") 'ibuffer)
-(global-set-key (kbd "C-c C-.") 'ido-switch-buffer)
+(global-set-key (kbd "C-|") 'ibuffer)
+(global-set-key (kbd "C-\\") 'ido-switch-buffer)
 
 
 ;;IDO
