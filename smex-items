@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ browse-kill-ring
+ list-packages
  package-list-packages
  magit-status
  shell
  set-mark-command
  ergoemacs-mode
- magit-reset-hard
- term
 )
 
 ;; ----- smex-data -----
@@ -23,7 +23,7 @@
  (shell . 17)
  (term . 16)
  (shell-command . 2)
- (browse-kill-ring . 2)
+ (browse-kill-ring . 4)
  (eww . 9)
  (eww-mode . 1)
  (bubbles . 1)
@@ -112,4 +112,5 @@
  (magit-reset-hard . 2)
  (ergoemacs-mode . 1)
  (set-mark-command . 1)
+ (list-packages . 1)
 )
