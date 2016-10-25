@@ -2,9 +2,26 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/jamesrtemple/Documents/Programming/" . "Gitting/")
+ ("/Users/jamesrtemple/.emacs.d/snippets/" . "angular/")
+ ("/Users/jamesrtemple/Documents/Projects/playground/" . "src/")
+ ("/Users/jamesrtemple/Documents/Projects/" . "play/")
+ ("/Users/jamesrtemple/Documents/" . "Programming/")
+ ("/Users/jamesrtemple/Dropbox/Programming/" . "Docs/")
+ ("/Users/jamesrtemple/Dropbox/" . "Practice Log/")
+ ("/Applications/Emacs.app/Contents/" . "MacOS/")
+ ("/Applications/Emacs.app/" . "Contents/")
+ ("/Applications/" . "Emacs.app/")
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Music/AC_DC/" . "Back in Black/")
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Music/" . "AC_DC/")
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Iron & Wine/" . "Our Endless Numbered Days/")
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Anke Helfrich/" . "Dedication (feat. Tim Hagans)/")
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/" . "Iron & Wine/")
+ ("/Users/jamesrtemple/Projects/" . "playground/")
+ ("/Users/jamesrtemple/Desktop/" . "$RECYCLE.BIN/")
  ("/" . "Users/")
  ("/Users/jamesrtemple/.emacs.d/elpa/" . "expand-region-20150902.558/")
- ("/Users/jamesrtemple/.emacs.d/" . "elpa/")
+ ("/Users/jamesrtemple/.emacs.d/" . "themes/")
  ("/Users/jamesrtemple/" . ".emacs.d/")
  ("/Users/" . "jamesrtemple/")
 )
@@ -12,28 +29,147 @@
 ;; ----- ido-work-directory-list -----
 (
  "/Users/jamesrtemple/.emacs.d/"
- "/Users/jamesrtemple/Desktop/"
- "/Users/jamesrtemple/.emacs.d/elpa/expand-region-20150902.558/"
+ "/Users/jamesrtemple/.emacs.d/themes/"
  "/Users/jamesrtemple/"
+ "/Users/jamesrtemple/Documents/Programming/Gitting/"
+ "/Users/jamesrtemple/Desktop/proj/"
+ "/Users/jamesrtemple/Documents/Projects/play/"
+ "/Users/jamesrtemple/Documents/"
+ "/Users/jamesrtemple/Dropbox/Practice Log/"
+ "/Users/jamesrtemple/Desktop/"
+ "/Users/jamesrtemple/Documents/Projects/playground/src/"
+ "/Users/jamesrtemple/Documents/Projects/electron-quick-start/"
+ "/Users/jamesrtemple/Documents/Projects/playground/"
+ "/Users/jamesrtemple/Dropbox/Programming/Docs/"
+ "/Users/jamesrtemple/Documents/Projects/playground/test/sub/"
+ "/Users/jamesrtemple/Documents/Projects/playground/test/"
+ "/Users/jamesrtemple/.emacs.d/snippets/"
+ "/Users/jamesrtemple/Dropbox/Programming/"
+ "/"
+ "/Users/jamesrtemple/Desktop/mysql-5.7/"
+ "/Applications/Emacs.app/Contents/MacOS/"
+ "/Users/jamesrtemple/Desktop/xnu-3248.20.55/"
+ "/Users/jamesrtemple/Projects/playground/"
+ "/Users/jamesrtemple/.gnupg/"
+ "/Users/jamesrtemple/Projects/playground/src/"
+ "/Users/jamesrtemple/Projects/playground/src/app/"
+ "/Users/jamesrtemple/.emacs.d/elpa/expand-region-20150902.558/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "init.el"
+ "hello.js"
  "tmp.js"
- "expand-region.el"
- ".em"
- "js-refactor-keys.txt"
- "des"
+ "CodeStock.org"
+ "201606.txt"
+ "201606.md"
+ "tmp.html"
+ "test.html"
+ "gulpfile.js"
+ "index.js"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/jamesrtemple/.emacs.d/" (22169 52041 0 0) "url/" "themes/" "TAGS" "snippets/" "smex-items" "recentf" "README.md" "lisp/" "init.el~" "init.el" "ido.last" "idlwave/" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".gitignore" ".git/" "../" "./")
+ ("/Users/jamesrtemple/.emacs.d/" (22542 50219 0 0) "var/" "url/" "themes/" "TAGS" "snippets/" "smex-items" "recentf" "README.md" "lisp/" "init.el~" "init.el" "ido.last" "idlwave/" "games/" "eshell/" "emms/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Programming/Gitting/" (22533 43921 0 0) "hello.js" ".git/" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Programming/" (22533 42290 0 0) "Unix.md" "unittesting.org" "Playground/" "oop.org" "isolationLevels.md" "Gitting/" "DevLink.org" ".tern-project" ".tern-port" "../" "./")
+
+ ("/Users/jamesrtemple/.gnupg/" (22533 38247 0 0) "trustdb.gpg" "secring.gpg" "S.gpg-agent" "RevCerts/" "random_seed" "pubring.gpg~" "pubring.gpg" "private-keys-v1.d/" "gpg.conf" "gpg-agent.conf" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/" (22517 40568 0 0) "Sonic Studio/" "Software Licenses/" "Snagit/" "SleepyHeadData/" "Resume.docx" "Programming/" "Product Manuals/" "Parallels/" "Paperwork/" "Notes/" "Music/" "Korean Studies/" "Images I Like/" "Home Videos/" "GPG Guides/" "desktop.ini" "Christmas and Thanksgiving.xlsx" "Certificates & Awards/" "App Installers/" ".tern-port" ".parallels-vm-directory/" ".localized" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/" (22516 24760 0 0) "Thumbs.db" "ReservationContract-415992.pdf" "Diamond Mountain Rentals : Confirmation.pdf" "desktop.ini" ".localized" ".emacs.desktop.lock" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/" (22497 40097 0 0) "Shared/" "jamesrtemple/" "Guest/" "admin/" ".localized" "../" "./")
+
+ ("/Users/jamesrtemple/" (22516 24724 0 0) "Public/" "Pictures/" "Parallels/" "Music/" "Movies/" "Mail/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications (Parallels)/" "Applications/" ".WebStorm11/" ".viminfo" ".vagrant.d/" ".v8flags.4.6.85.28.jamesrtemple.json" ".Trash/" ".ssh/" ".sh_history" ".oracle_jre_usage/" ".npm/" ".node_repl_history" ".node-gyp/" ".netbeans-derby/" ".mysql_history" ".m2/" ".local/" ".lesshst" ".ispell_english" ".IntelliJIdea15/" ".hyperterm_plugins/" ".hyperterm.js" ".hgignore_global" ".gnupg/" ".gitignore_global" ".gitconfig" ".gfclient/" ".emacs.d/" ".electron/" ".DS_Store" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/proj/" (22478 21647 0 0) "tmp.js" ".tern-port" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/themes/" (22478 20259 0 0) "zenburn-theme.el" "wilson-theme.el" "sublime-themes.el" "spolsky-theme.el" "ritchie-theme.el" "odersky-theme.el" "mustard-theme.el" "mccarthy-theme.el" "mbo70s-theme.el" "junio-theme.el" "hickey-theme.el" "granger-theme.el" "ample-theme.el" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/play/" (22431 64207 0 0) "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/" (22392 12601 0 0) "UnitTesting/" "playground/" "play/" "electron-quick-start/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Dropbox/Programming/" (22365 42212 0 0) "Docs/" ".tern-project" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Dropbox/Practice Log/" (22366 20148 0 0) "201606.txt" ".DS_Store" "../" "./")
+
+ ("/Applications/" (22363 30479 0 0) "Xcode.app/" "WiFi Explorer.app/" "WebStorm.app/" "VOX.app/" "Utilities/" "Ulysses.app/" "Ultimate BlackJack Reloaded.app/" "Tweetbot.app/" "Todoist.app/" "Time Machine.app/" "The Clock.app/" "TextEdit.app/" "System Preferences.app/" "Stickies.app/" "SpamSieve.app/" "SourceTree.app/" "Smart Converter Pro 2.app/" "Skype.app/" "Scrivener.app/" "ScaleMaster.app/" "Safari.app/" "Reminders.app/" "Reeder.app/" "QuickTime Player.app/" "Preview.app/" "Pixelmator.app/" "Pimp Your Screen.app/" "Photos.app/" "Photo Booth.app/" "Parallels Desktop.app/" "Paprika Recipe Manager.app/" "Pages.app/" "Numbers.app/" "Notes.app/" "Norton Security.app/" "Noise Meter.app/" "NetworkUtility-OSX.app/" "NetBeans/" "MySQLWorkbench.app/" "MyHarmony.app/" "MPlayerX.app/" "Mission Control.app/" "Microsoft Word.app/" "Microsoft PowerPoint.app/" "Microsoft Outlook.app/" "Microsoft OneNote.app/" "Microsoft Excel.app/" "Messages.app/" "Marked 2.app/" "Maps.app/" "Mail.app/" "Mahjong Solitaire Epic.app/" "Line6/" "Leaf.app/" "Launchpad.app/" "Knights of the Old Republic.app/" "Kindle.app/" "Keynote.app/" "iTunes.app/" "iRehearse.app/" "iReal Pro.app/" "iMovie.app/" "Image Capture.app/" "iBooks.app/" "HyperDock.app/" "Home Designer Suite 2015.app/" "GPG Keychain.app/" "Google Chrome.app/" "GarageBand.app/" "Game Center.app/" "Full Deck Solitaire.app/" "Font Book.app/" "Flashcard Hero.app/" "Firefox.app/" "FingerWorks.app/" "Fantastical 2.app/" "FaceTime.app/" "Evernote.app/" "Epson Software/" "Emacs.app/" "EarMaster Pro 6.app/" "DVD Player.app/" "Duplicate Detective.app/" "Dropbox.app/" "DM1.app/" "Disk Doctor.app/" "Dictionary.app/" "Day One.app/" "Dashlane.app/" "Dashboard.app/" "Dash.app/" "DaisyDisk.app/" "Craps.app/" "Contacts.app/" "Commander One PRO.app/" "Clear Day.app/" "Citrix Receiver.app/" "ChordMate.app/" "Chess.app/" "Chess Deluxe.app/" "Capo.app/" "Calendar.app/" "Calculator.app/" "Caffeine.app/" "Byword.app/" "Blackjack World Pro.app/" "BetterSnapTool.app/" "Bejeweled 3.app/" "Banktivity 5.app/" "Backgammon Masters - Beginner edition.app/" "Automator.app/" "App Store.app/" "AmpKit.app/" "Amarra sQ/" "Airmail 2.app/" "Adobe Photoshop Lightroom 5.app/" "Adobe Photoshop CC 2015/" "Adobe Lightroom/" "Adobe Creative Cloud/" "Adobe/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Dropbox/" (22365 39994 0 0) "Resume.docx" "Programming/" "Product Manuals/" "Practice Log/" "Photos/" "Notes/" "Music/" "Korean Studies/" "Images I Like/" "Icon
+" "Home Videos/" "Get Started with Dropbox.pdf" "Flashcard Hero/" "Certificates & Awards/" "Camera Uploads/" "Apps/" ".ws.agile.1Password.settings" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/playground/test/" (22265 58881 0 0) "sub/" "indexspec.js" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/Playground/" (22276 19049 0 0) "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/playground/src/" (22265 58716 0 0) "index.js" "index.html" "bower_components/" ".tern-port" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/playground/test/sub/" (22265 55778 0 0) "newspec.js" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/playground/" (22265 55945 0 0) "test/" "src/" "package.json" "node_modules/" "karma.conf.js" ".karma" "../" "./")
+
+ ("/Users/jamesrtemple/Dropbox/Programming/Docs/" (22230 29985 0 0) "winswitch.org" "Unix.md" "unittesting.org" "ToLearn.md" "oop.org" "oauth2.org" "js-refactor-keys.txt" "javascript.org" "javascript/" "java.md" "isolationLevels.md" "DevLink.org" "cssref2.md" "cssref.org" "angular.md" ".DS_Store" "../" "./")
+
+ ("/bin/" (22176 25843 0 0) "zsh" "wait4path" "unlink" "test" "tcsh" "sync" "stty" "sleep" "sh" "rmdir" "rm" "rcp" "pwd" "ps" "pax" "mv" "mkdir" "ls" "ln" "link" "launchctl" "ksh" "kill" "hostname" "expr" "ed" "echo" "domainname" "df" "dd" "date" "csh" "cp" "chmod" "cat" "bash" "[" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/snippets/angular/" (22211 60294 0 0) "js-mode/" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/snippets/jasmine/" (22211 60227 0 0) "js-mode/" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/snippets/js-mode/" (22211 59818 0 0) "req.json" "req.html" "log" "js-array-sort" "js-array-some" "js-array-map" "js-array-join" "js-array-forEach" "js-array-fill" "init" "if" "function" "for" "ev.fire" "ev.add" "el" "each" "debugger" "com" "class" "al" "../" "./")
+
+ ("/Users/jamesrtemple/.emacs.d/snippets/" (22211 59666 0 0) "js-mode/" "jasmine/" "angular/" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/xnu-3248.20.55/" (22182 61279 0 0) "tools/" "SETUP/" "security/" "README" "pexpert/" "osfmk/" "Makefile" "makedefs/" "libsyscall/" "libsa/" "libkern/" "libkdd/" "iokit/" "EXTERNAL_HEADERS/" "config/" "CMakeLists.txt" "bsd/" "APPLE_LICENSE" ".idea/" ".DS_Store" ".clang-format" "../" "./")
+
+ ("/Users/jamesrtemple/Documents/Projects/electron-quick-start/" (22184 9046 0 0) "README.md" "proctest.js" "package.json" "node_modules/" "main.js" "LICENSE.md" "index.html" ".idea/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/mysql-5.7/" (22177 22157 0 0) "tmpRoot.txt" "refman-5.7-en.epub" "mysql-workbench-community-6.3.6-osx-x86_64.dmg" "mysql-utilities-1.5.6-osx10.9.dmg" "mysql-connector-java-5.1.38/" "mysql-5.7.info" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/xnu-3248.20.55/osfmk/" (22176 24269 0 0) "x86_64/" "vm/" "UserNotification/" "profiling/" "prng/" "man/" "Makefile" "machine/" "mach_debug/" "mach/" "lockd/" "libsa/" "kperf/" "kextd/" "kern/" "kdp/" "ipc/" "i386/" "gssd/" "device/" "default_pager/" "corpses/" "corecrypto/" "console/" "conf/" "chud/" "bank/" "atm/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/xnu-3248.20.55/osfmk/mach/" (22176 24293 0 0) "vm_types.h" "vm_sync.h" "vm_statistics.h" "vm_region.h" "vm_purgable.h" "vm_prot.h" "vm_param.h" "vm_map.defs" "vm_inherit.h" "vm_behavior.h" "vm_attributes.h" "vm32_map.defs" "upl.defs" "time_value.h" "thread_switch.h" "thread_status.h" "thread_special_ports.h" "thread_policy.h" "thread_info.h" "thread_act.defs" "telemetry_notification.defs" "task_special_ports.h" "task_policy.h" "task_ledger.h" "task_info.h" "task_access.defs" "task.defs" "sysdiagnose_notification.defs" "syscall_sw.h" "sync_policy.h" "sync.defs" "std_types.h" "std_types.defs" "shared_region.h" "shared_memory_server.h" "sfi_class.h" "semaphore.h" "semaphore.defs" "sdt.h" "rpc.h" "prof_types.h" "prof.defs" "processor_set.defs" "processor_info.h" "processor.defs" "port.h" "policy.h" "notify.h" "notify.defs" "ndr.h" "msg_type.h" "mk_traps.h" "mk_timer.h" "mig_voucher_support.h" "mig_log.h" "mig_errors.h" "mig.h" "message.h" "memory_object_types.h" "memory_object_default.defs" "memory_object_control.defs" "memory_object.h" "memory_object.defs" "Makefile" "machine.h" "machine/" "mach_voucher_types.h" "mach_voucher_attr_control.defs" "mach_voucher.defs" "mach_vm.defs" "mach_types.h" "mach_types.defs" "mach_traps.h" "mach_time.h" "mach_syscalls.h" "mach_port.defs" "mach_param.h" "mach_notify.defs" "mach_interface.h" "mach_host.defs" "mach_exc.defs" "mach.h" "lock_set.defs" "ledger.defs" "kmod.h" "kern_return.h" "i386/" "host_special_ports.h" "host_security.defs" "host_reboot.h" "host_priv.defs" "host_notify_reply.defs" "host_notify.h" "host_info.h" "exception_types.h" "exception.h" "exc.defs" "events_info.h" "error.h" "coalition_notification.defs" "coalition.h" "clock_types.h" "clock_types.defs" "clock_reply.defs" "clock_priv.defs" "clock.defs" "branch_predicates.h" "bootstrap.h" "boolean.h" "audit_triggers.defs" "alert.h" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Projects/playground/" (22174 58908 0 0) "src/" "protractor.conf.js" "package.json" "node_modules/" "karma.conf.js" "gulpfile.js" "gulp/" "e2e/" "bower_components/" "bower.json" ".yo-rc.json" ".tmp/" ".gitignore" ".eslintrc" ".emacs.desktop" ".editorconfig" ".bowerrc" "../" "./")
+
+ ("/Users/jamesrtemple/Projects/electron-quick-start/" (22172 14130 0 0) "README.md" "package.json" "node_modules/" "main.js" "LICENSE.md" "index.html" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Music/AC_DC/Back in Black/" (22173 57836 0 0) "10 Rock and Roll Ain't Noise Pollution.m4a" "10 Rock and Roll Ain't Noise Pollution 1.m4a" "09 Shake a Leg.m4a" "09 Shake a Leg 1.m4a" "08 Have a Drink on Me.m4a" "08 Have a Drink on Me 1.m4a" "07 You Shook Me All Night Long.m4a" "07 You Shook Me All Night Long 1.m4a" "06 Back in Black.m4a" "06 Back in Black 1.m4a" "05 Let Me Put My Love into You.m4a" "05 Let Me Put My Love into You 1.m4a" "04 Givin the Dog a Bone.m4a" "04 Givin the Dog a Bone 1.m4a" "03 What Do You Do for Money Honey.m4a" "03 What Do You Do for Money Honey 1.m4a" "02 Shoot to Thrill.m4a" "02 Shoot to Thrill 1.m4a" "01 Hells Bells.mp3" "01 Hells Bells.m4a" "01 Hells Bells 1.m4a" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Music/AC_DC/" (22159 14776 0 0) "Back in Black/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Music/" (22159 22816 0 0) "태진아/" "Yo La Tengo/" "Wolfgang Amadeus Mozart/" "Willie Nelson/" "Wes Montgomery/" "Ween/" "Weather Report/" "Wayne Shorter/" "Various Artists/" "Various/" "Trampled By Turtles/" "Tomaso Albinoni/" "Tom Waits & Kronos Quartet/" "Tom Waits/" "The Wailin' Jennys/" "The Velvet Underground/" "The Spinners/" "The Rolling Stones/" "The Magnetic Fields/" "The Hilliar Ensemble/" "The Doors/" "The Cranberries/" "The Chieftains/" "The Black Eyed Peas/" "The Bird and the Bee/" "The Beatles/" "Sting/" "Stanley Turrentine/" "St. Vincent/" "Soundtrack/" "Sonny Rollins/" "Sly & the Family Stone/" "Simon & Garfunkel/" "Scorpions/" "Santana/" "Ryuichi Sakamoto/" "Rush/" "Robert Johnson/" "Rhonda Vincent/" "Return to Forever/" "Red Hot Chili Peppers/" "Raymond Leppard/" "Rammstein/" "Radiohead/" "R.E.M_/" "Pyotr Il'yich Tchaikovsky/" "PSY/" "Portishead/" "Pink Floyd/" "Phineas Newborn Jr_/" "Philip Glass Ensemble/" "Philip Glass/" "Pharoah Sanders/" "Peter Tosh/" "Patty Griffin/" "Pat Metheny/" "Pascal Rogé/" "Over the Rhine/" "Old Crow Medicine Show/" "Norah Jones/" "No Doubt/" "Nirvana/" "Nick Drake/" "New York Philharmonic (Bernstein) _ Philadelphia Orchestra (Ormandy)/" "Neutral Milk Hotel/" "Monks of the Dip Tse Chok Ling Monastery/" "Monilal Nag & Mahaprush Misra/" "Miles Davis & Modern Jazz Giants/" "Miles Davis/" "Michel Plasson/" "Michael Tilson Thomas & San Francisco Symphony/" "Michael Franks/" "Mel Tormé/" "Mazzy Star/" "Mastodon/" "Mark Knopfler/" "Marilyn Manson/" "Manu Chao/" "Mannheim Steamroller/" "Mahler/" "Mahavishnu Orchestra With John McLaughlin/" "Ludwig van Beethoven/" "London Wind Orchestra/" "London Philharmonic Orchestra & Andrew Skeet/" "Leonard Cohen/" "Leonard Bernstein/" "Lee Morgan/" "LeAnn Rimes/" "Kris Kristofferson/" "Korn/" "Kenny Garrett/" "Kenny Barron & Stan Getz/" "Kate Wolf/" "Julieta Venegas/" "julian bream, john williams/" "Julian Bream/" "Judas Priest/" "José González/" "Jose Gonzalez/" "John Lennon/" "John Hiatt/" "John Denver/" "John Coltrane/" "John Alldis, John Alldis Choir, London Philharmonic Orchestra, Luciano Pavarotti, Russell Burgess, Wandsworth School Boys Choir & Zubin Mehta/" "Joe Pass/" "Joe Henderson/" "Joe Bonamassa/" "Joanna Newsom/" "Joan Baez/" "Jane's Addiction/" "James Durbin/" "Jackson 5/" "I Fiamminghi & Rudolf Werthen/" "Hole/" "Herbie Hancock/" "Gipsy Kings/" "Gillian Welch/" "Ghazal/" "George Shearing Quintet with Nancy Wilson/" "George Harrison/" "Frederick M. Noad/" "Freddie King/" "Freddie Hubbard/" "Frank Sinatra/" "Foo Fighters/" "Fleetwood Mac/" "Esperanza Spalding/" "Er Hu/" "Emmylou Harris/" "Elton John/" "Eagles/" "Donald Brown/" "Django Reinhardt/" "Dixie Chicks/" "Diane Birch/" "Diana Krall/" "Dexter Gordon/" "Dengue Fever/" "Death Cab for Cutie/" "David Crosby/" "David Bowie/" "Dave Rawlings Machine/" "Cowboy Junkies/" "Compilations/" "Cindy Kallet/" "Chet Atkins & Mark Knopfler/" "Charles McPherson/" "Cedar Walton, George Coleman, Sam Jones & Billy Higgins/" "Carrie Underwood/" "Boston Symphony_Morton Gould Orchestra/" "Boston/" "Bob Marley & The Wailers/" "Bob Dylan/" "Black Eyed Peas/" "Björk/" "Billie Holiday/" "Berliner Philharmoniker/" "Benjamin Britten/" "Bee Gees/" "Beck/" "Arcade Fire/" "Antonio Hart/" "Antonin Dvorák/" "Andy McKee/" "Allen Toussaint & Elvis Costello/" "Alison Krauss & Union Station/" "Alejandro Escovedo/" "Al Di Meola, John McLaughlin, Paco De Lucia/" "Al Di Meola/" "Aimee Mann/" "Academy of St. Martin-in-the-Fields/" "AC_DC/" "10,000 Maniacs/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Iron & Wine/Our Endless Numbered Days/" (22159 17736 0 0) "12 Passing Afternoon.m4p" "11 Sodom, South Georgia.m4p" "10 Fever Dream.m4p" "09 Free Until They Cut Me Down.m4p" "08 Each Coming Night.m4p" "07 Radio War.m4p" "06 Love and Some Verses.m4p" "05 Teeth in the Grass.m4p" "04 Sunset Soon Forgotten.m4p" "03 Cinder and Smoke.m4p" "02 Naked As We Came.m4p" "01 On Your Wings.m4p" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Iron & Wine/" (22159 17709 0 0) "Our Endless Numbered Days/" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Anke Helfrich/Dedication (feat. Tim Hagans)/" (22159 14662 0 0) "10 A Simple Act of Kindness (feat. Tim Hagans).m4p" "09 The Prize (feat. Tim Hagans).m4p" "08 Aspettami (Wait for Me) [feat. Tim Hagans].m4p" "07 Think of One (feat. Tim Hagans).m4p" "06 Sagrada Familia (feat. Tim Hagans).m4p" "05 Interlude - Wehklage (feat. Tim Hagans).m4p" "04 Rise and Shine (feat. Tim Hagans).m4p" "03 Interlude - Lost & Found (feat. Tim Hagans).m4p" "02 Chan's Song (feat. Tim Hagans).m4p" "01 Invictus (feat. Tim Hagans).m4p" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/Anke Helfrich/" (22159 14732 0 0) "Dedication (feat. Tim Hagans)/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Music/iTunes/iTunes Media/Apple Music/" (22159 21578 0 0) "The Shaolin Afronauts/" "Sweethearts of the Rodeo/" "Santana/" "PJ Harvey/" "Opeth/" "Omar Souleyman/" "Neko Case/" "Kamasi Washington/" "John Coltrane/" "Janine Jansen/" "Iron & Wine/" "Iris DeMent/" "Heart/" "Emmylou Harris/" "Chris Lightcap's Bigmouth/" "Berliner Philharmoniker, Rundfunkchor Berlin & Sir Simon Rattle/" "Anke Helfrich/" ".DS_Store" "../" "./")
+
+ ("/Users/jamesrtemple/Projects/playground/src/app/" (22173 35608 0 0) "tmp.txt" "index.js" "DirectoryService.js" "components/" ".tern-port" "../" "./")
+
+ ("/Users/jamesrtemple/Projects/playground/src/" (22173 34810 0 0) "site.css" "index.html" "favicon.ico" "assets/" "app/" "../" "./")
+
+ ("/Users/jamesrtemple/Projects/" (22172 17423 0 0) "playground/" "electron-quick-start/" "../" "./")
+
+ ("/Users/jamesrtemple/Desktop/$RECYCLE.BIN/" (21954 38126 0 0) ".prl_rec/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/info/" (21800 6518 0 0) "woman.info.gz" "wisent.info.gz" "widget.info.gz" "viper.info.gz" "vip.info.gz" "url.info.gz" "tramp.info.gz" "todo-mode.info.gz" "srecode.info.gz" "speedbar.info.gz" "smtpmail.info.gz" "sieve.info.gz" "ses.info.gz" "semantic.info.gz" "sc.info.gz" "sasl.info.gz" "remember.info.gz" "reftex.info.gz" "rcirc.info.gz" "pgg.info.gz" "pcl-cvs.info.gz" "org.info.gz" "octave-mode.info.gz" "nxml-mode.info.gz" "newsticker.info.gz" "mh-e.info.gz" "message.info.gz" "mairix-el.info.gz" "info.info.gz" "ido.info.gz" "idlwave.info.gz" "htmlfontify.info.gz" "gnus.info.gz" "forms.info.gz" "flymake.info.gz" "eww.info.gz" "eudc.info.gz" "eshell.info.gz" "ert.info.gz" "erc.info.gz" "epa.info.gz" "emacs.info.gz" "emacs-mime.info.gz" "emacs-gnutls.info.gz" "elisp.info.gz" "eintr.info.gz" "eieio.info.gz" "efaq.info.gz" "edt.info.gz" "ediff.info.gz" "ede.info.gz" "ebrowse.info.gz" "dired-x.info.gz" "dir" "dbus.info.gz" "cl.info.gz" "ccmode.info.gz" "calc.info.gz" "bovine.info.gz" "autotype.info.gz" "auth.info.gz" "ada-mode.info.gz" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/" (21800 6639 0 0) "var/" "site-lisp/" "man/" "lisp/" "info/" "etc/" "English.lproj/" "Emacs.icns" "document.icns" "Credits.html" "../" "./")
 
  ("/Users/jamesrtemple/.emacs.d/elpa/" (22169 51284 0 0) "yasnippet-readme.txt" "yasnippet-20160104.129/" "with-editor-20160115.1233/" "win-switch-20150208.1911/" "web-beautify-20131118.226/" "tern-auto-complete-20151123.653/" "tern-20151228.511/" "sr-speedbar-20150804.951/" "smooth-scrolling-20131219.2039/" "smex-20151212.1409/" "skewer-mode-20150914.1304/" "simple-httpd-20150430.1755/" "seq-1.11/" "s-20160115.58/" "rainbow-delimiters-20150320.17/" "powerline-readme.txt" "powerline-20151008.1449/" "popup-20151222.1339/" "pkg-info-20150517.443/" "pandoc-mode-readme.txt" "pandoc-mode-20151030.313/" "org-bullets-20140918.1137/" "octicons-readme.txt" "neotree-20160111.2358/" "multiple-cursors-20151205.1225/" "markdown-mode-20160115.1746/" "main-line-readme.txt" "magit-readme.txt" "magit-popup-20160107.437/" "magit-20160115.1613/" "let-alist-1.0.4/" "js2-refactor-20151029.507/" "js2-mode-20160109.148/" "indent-guide-20151119.717/" "ido-vertical-mode-20151003.1833/" "ido-ubiquitous-readme.txt" "ido-ubiquitous-20160115.1626/" "ido-completing-read+-20151219.836/" "hydra-20151214.417/" "helm-spotify-readme.txt" "helm-core-20160113.2347/" "helm-c-yasnippet-readme.txt" "helm-c-yasnippet-20151231.10/" "helm-ad-readme.txt" "helm-20160115.505/" "gnupg/" "git-commit-20160112.1109/" "flycheck-20160114.1250/" "expand-region-20150902.558/" "epl-20150517.433/" "dash-20151216.1315/" "control-mode-readme.txt" "control-mode-20140218.607/" "auto-complete-readme.txt" "auto-complete-chunk-readme.txt" "auto-complete-20160107.8/" "async-20160108.1249/" "archives/" "ac-js2-20140906.442/" "../" "./")
-
- ("/Applications/" (22167 65211 0 0) "Xcode.app/" "WiFi Explorer.app/" "WebStorm.app/" "Utilities/" "Tweetbot.app/" "Time Machine.app/" "The Clock.app/" "TextEdit.app/" "System Preferences.app/" "Stickies.app/" "SpamSieve.app/" "Smart Converter Pro 2.app/" "Skype.app/" "Scrivener.app/" "ScaleMaster.app/" "Safari.app/" "Reminders.app/" "Reeder.app/" "QuickTime Player.app/" "Preview.app/" "Pocket.app/" "Pixelmator.app/" "Pimp Your Screen.app/" "Photos.app/" "Photo Booth.app/" "Parallels Desktop.app/" "Paprika Recipe Manager.app/" "Pages.app/" "Numbers.app/" "Notes.app/" "NetworkUtilityX.app/" "NetBeans/" "MPlayerX.app/" "Mission Control.app/" "Messages.app/" "Maps.app/" "Mail.app/" "Mahjong Solitaire Epic.app/" "Leaf.app/" "Launchpad.app/" "Knights of the Old Republic.app/" "Kindle.app/" "Keynote.app/" "iTunes.app/" "iRehearse.app/" "iReal Pro.app/" "IntelliJ IDEA 15.app/" "iMovie.app/" "Image Capture.app/" "iBooks.app/" "iBank 5.app/" "HyperDock.app/" "GPG Keychain.app/" "Google Chrome.app/" "GarageBand.app/" "Game Center.app/" "Full Deck Solitaire.app/" "Font Book.app/" "Flashcard Hero.app/" "Firefox.app/" "FingerWorks.app/" "FaceTime.app/" "Evernote.app/" "Epson Software/" "Emacs.app/" "EarMaster Pro 6.app/" "DVD Player.app/" "Duplicate Detective.app/" "DM1.app/" "Disk Doctor.app/" "Dictionary.app/" "Day One.app/" "Dashboard.app/" "Dash.app/" "Contacts.app/" "Commander One PRO.app/" "Clear Day.app/" "Citrix Receiver.app/" "ChordMate.app/" "Chess.app/" "Chess Deluxe.app/" "Calendar.app/" "Calculator.app/" "Caffeine.app/" "Byword.app/" "BetterSnapTool.app/" "Bejeweled 3.app/" "Backgammon Masters - Beginner edition.app/" "Automator.app/" "App Store.app/" "Amarra sQ/" "Adobe Photoshop Lightroom 5.app/" "1Password.app/" ".localized" ".DS_Store" "../" "./")
 
  ("/Applications/Emacs.app/" (21800 6412 0 0) "Contents/" "../" "./")
 
@@ -44,14 +180,6 @@
  ("/Users/jamesrtemple/.emacs.d/idlwave/" (21692 7106 0 0) "../" "./")
 
  ("/Users/jamesrtemple/.emacs.d/elpa/expand-region-20150902.558/" (22150 2880 0 0) "web-mode-expansions.elc" "web-mode-expansions.el" "the-org-mode-expansions.elc" "the-org-mode-expansions.el" "text-mode-expansions.elc" "text-mode-expansions.el" "subword-mode-expansions.elc" "subword-mode-expansions.el" "sml-mode-expansions.elc" "sml-mode-expansions.el" "ruby-mode-expansions.elc" "ruby-mode-expansions.el" "python-mode-expansions.elc" "python-mode-expansions.el" "python-el-fgallina-expansions.elc" "python-el-fgallina-expansions.el" "python-el-expansions.elc" "python-el-expansions.el" "octave-expansions.elc" "octave-expansions.el" "nxml-mode-expansions.elc" "nxml-mode-expansions.el" "latex-mode-expansions.elc" "latex-mode-expansions.el" "jsp-expansions.elc" "jsp-expansions.el" "js2-mode-expansions.elc" "js2-mode-expansions.el" "js-mode-expansions.elc" "js-mode-expansions.el" "html-mode-expansions.elc" "html-mode-expansions.el" "feature-mode-expansions.elc" "feature-mode-expansions.el" "expand-region.elc" "expand-region.el" "expand-region-pkg.el" "expand-region-custom.elc" "expand-region-custom.el" "expand-region-core.elc" "expand-region-core.el" "expand-region-autoloads.el" "erlang-mode-expansions.elc" "erlang-mode-expansions.el" "er-basic-expansions.elc" "er-basic-expansions.el" "enh-ruby-mode-expansions.elc" "enh-ruby-mode-expansions.el" "css-mode-expansions.elc" "css-mode-expansions.el" "cperl-mode-expansions.elc" "cperl-mode-expansions.el" "clojure-mode-expansions.elc" "clojure-mode-expansions.el" "cc-mode-expansions.elc" "cc-mode-expansions.el" "../" "./")
-
- ("/Users/jamesrtemple/.emacs.d/themes/" (22152 50462 0 0) "zenburn-theme.el" "wilson-theme.el" "sublime-themes.el" "spolsky-theme.el" "ritchie-theme.el" "odersky-theme.el" "mccarthy-theme.el" "mbo70s-theme.el" "leuven-theme.el" "junio-theme.el" "hickey-theme.el" "granger-theme.el" "graham-theme.el" "fogus-theme.el" "dorsey-theme.el" "brin-theme.el" "ample-zen-theme.el" "ample-theme.el" "../" "./")
-
- ("/Users/jamesrtemple/Desktop/" (22165 52093 0 0) "winswitch.org" "tmp.js" "Thumbs.db" "Old Firefox Data/" "main-qimg-96300ce2cde62db67286aac46db03e16.jpg" "js-refactor-keys.txt" "Family Photos 2014/" "EM-K61A-33010.exe" "Dragon.docx" "desktop.ini" "Atom.app/" ".tern-port" ".localized" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
-
- ("/Users/" (22029 51308 0 0) "Shared/" "jamesrtemple/" "Guest/" "admin/" ".localized" "../" "./")
-
- ("/Users/jamesrtemple/" (22156 37849 0 0) "WebstormProjects/" "Public/" "Pictures/" "NetBeansProjects/" "Music/" "Movies/" "Library/" "iCloud/" "Downloads/" "Documents/" "Desktop/" "Applications (Parallels)/" "Applications/" ".WebStorm11/" ".WebStorm10/" ".viminfo" ".Trash/" ".sh_history" ".oracle_jre_usage/" ".npm/" ".node-gyp/" ".netbeans-derby/" ".m2/" ".local/" ".lesshst" ".gnupg/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
