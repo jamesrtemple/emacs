@@ -34,8 +34,7 @@
     (progn
        (setenv "PATH" (concat "/usr/local/bin:/usr/local/sbin:" (getenv "PATH")))
        (setq exec-path (append exec-path '("/usr/local/bin")))
-       (setq mac-command-modifier 'control)
-       (setq mac-right-command-modifier 'meta)))
+       (setq mac-command-modifier 'control)))
 
 
 ;;POWERLINE
@@ -44,7 +43,7 @@
  
 ;;WIN-SWITCH
 (require 'win-switch)
-(global-set-key (kbd "C-'") 'win-switch-enter)
+(global-set-key (kbd "C-o") 'win-switch-enter)
 (setq win-switch-window-threshold 1)
 (setq win-switch-idle-time 15)
 
@@ -77,7 +76,7 @@
 
 
 ;;ACE JUMP
-(global-set-key (kbd "C-;") 'ace-jump-mode)
+(global-set-key (kbd "C-z") 'ace-jump-mode)
 
 
 ;;RAINBOW DELIMITERS
