@@ -1,8 +1,8 @@
-/auto-save-list/*
+/auto-save-list/**
 /.org-id-locations
-/url/*
+/url/**
 ac-comphist.dat
-elpa/archives/*
+elpa/archives/**
 ido.last
 init.el~
 recentf
