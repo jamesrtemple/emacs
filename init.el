@@ -12,7 +12,7 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                              ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                ;;Set toolbar off
-  (fringe-mode 2)                                 ;;Enable fringes  
+  (fringe-mode 5)                                  ;;Enable fringes  
 )
 
 (put 'narrow-to-region 'disabled nil)            
@@ -23,9 +23,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/colorthemes")
 (if (display-graphic-p)
     (progn
-      (load-theme 'junio t))
-  (load-theme 'arjen t t)
-  (enable-theme 'arjen))
+      (load-theme 'ample t)))
 
 
 ;;MELPA
@@ -39,7 +37,10 @@
     (progn
        (setenv "PATH" (concat "/usr/local/bin:/usr/local/sbin:" (getenv "PATH")))
        (setq exec-path (append exec-path '("/usr/local/bin")))
-       (setq mac-command-modifier 'control)))
+       (setq mac-command-modifier 'control)
+       (set-terminal-coding-system 'utf-8)
+       (set-keyboard-coding-system 'utf-8)
+       (prefer-coding-system 'utf-8)))
 
 
 ;;POWERLINE
@@ -218,6 +219,40 @@
 ;;END JAVASCRIPT
 
 
+;;TYPESCRIPT
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  ;;(company-mode +1)
+  )
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+;; format options
+(setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
+
+
+;;PROJECTILE
+(setq projectile-indexing-method 'native)
+
+
+
+
+
+
 (defun prompt ()
   "Open a shell below the current window"
   (interactive)
@@ -225,12 +260,6 @@
     (split-window-below -10)
     (other-window 1)
     (shell)))
-
-
-
-
-
-
 
 
 (custom-set-variables
@@ -243,7 +272,7 @@
     ("fe349b21bb978bb1f1f2db05bc87b2c6d02f1a7fe3f27584cd7b6fbf8e53391a" "5eb4b22e97ddb2db9ecce7d983fa45eb8367447f151c7e1b033af27820f43760" "b8c5adfc0230bd8e8d73450c2cd4044ad7ba1d24458e37b6dec65607fc392980" "8530b2f7b281ea6f263be265dd8c75b502ecd7a30b9a0f28fa9398739e833a35" "1a094b79734450a146b0c43afb6c669045d7a8a5c28bc0210aba28d36f85d86f" "9bd5ee2b24759fbc97f86c2783d1bf8f883eb1c0dd2cf7bda2b539cd28abf6a9" "2d5c40e709543f156d3dee750cd9ac580a20a371f1b1e1e3ecbef2b895cf0cd2" "2047464bf6781156ebdac9e38a17b97bd2594b39cfeaab561afffcbbe19314e2" "392f19e7788de27faf128a6f56325123c47205f477da227baf6a6a918f73b5dc" "a455366c5cdacebd8adaa99d50e37430b0170326e7640a688e9d9ad406e2edfd" default)))
  '(package-selected-packages
    (quote
-    (color-theme-modern win-switch web-mode web-beautify unicode-fonts tern-auto-complete smooth-scrolling smex rainbow-delimiters powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide impatient-mode ido-vertical-mode ido-ubiquitous helm-c-yasnippet flycheck expand-region emms emmet-mode browse-kill-ring ace-jump-mode ac-js2))))
+    (tide projectile color-theme-modern win-switch web-mode web-beautify unicode-fonts tern-auto-complete smooth-scrolling smex rainbow-delimiters powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide impatient-mode ido-vertical-mode ido-ubiquitous helm-c-yasnippet flycheck expand-region emms emmet-mode browse-kill-ring ace-jump-mode ac-js2))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
