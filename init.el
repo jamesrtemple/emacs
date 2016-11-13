@@ -18,7 +18,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/colorthemes")
 (if (display-graphic-p)
-    (load-theme 'ample t))
+    (load-theme 'monokai t))
 
 
 ;;MELPA
@@ -52,23 +52,6 @@
 ;; BUFFER SWITCHING
 (global-set-key (kbd "C-|") 'ibuffer)
 (global-set-key (kbd "C-\\") 'ido-switch-buffer)
-
-
-;;IDO
-;; (ido-mode 1)
-;; (ido-everywhere 1)
-;; (ido-ubiquitous-mode 1)
-;; (setq org-completion-use-ido t)
-;; (setq magit-completing-read-function 'magit-ido-completing-read)
-;; (ido-vertical-mode 1)
-;; (setq ido-vertical-define-keys 'C-n-and-C-p-only)
-
-
-;; ;;SMEX
-;; (smex-initialize)
-;; (global-set-key (kbd "M-x") 'smex)
-;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
 ;;EXPAND REGION
@@ -117,12 +100,12 @@
 ;;AUTO COMPLETE
 ;;  Loaded after yasnippet so that they can work together
 ;;  Sets trigger to work with yasnippet on tab. If word in yasnippet, tab activates yasnippet.
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20140824.1658/dict")
-(ac-config-default)
-(ac-set-trigger-key "TAB")
-(ac-set-trigger-key "<tab>")
-(put 'dired-find-alternate-file 'disabled nil)
+;; (require 'auto-complete-config)
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20140824.1658/dict")
+;; (ac-config-default)
+;; (ac-set-trigger-key "TAB")
+;; (ac-set-trigger-key "<tab>")
+;; (put 'dired-find-alternate-file 'disabled nil)
 
 
 ;;NEOTREE
@@ -173,44 +156,30 @@
 (add-hook 'markdown-mode-hook 'pandoc-mode)
 
 
+;;COMPANY
+(require 'company)
+(add-to-list 'company-backends 'company-tern)
+(global-company-mode)
+
 
 ;;JAVASCRIPT
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 (add-hook 'js-mode-hook 'js2-minor-mode)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
-(add-hook 'js2-mode-hook 'indent-guide-mode)
 (yas-reload-all)
 (add-hook 'js2-mode-hook 'yas-minor-mode)
 
 (require 'flycheck)
-(add-hook 'js-mode-hook (lambda () (flycheck-mode t)))
-
 (require 'js2-refactor)
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-n")
 
+(add-hook 'js2-mode-hook 'myJs2ModeHook)
 
-;;TERN
-(add-hook 'js2-mode-hook (lambda ()
-			   (tern-mode t)))
-(eval-after-load 'tern '(progn
-			  (require 'tern-auto-complete)
-			  (tern-ac-setup)))
-
-
-;;NODE REPL
-(setq inferior-js-program-command "node")
-(add-hook 'js2-mode-hook '(lambda () 
-			    (local-set-key "\C-x\C-e" 'js-send-last-sexp) ;
-			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
-			    (local-set-key "\C-cb" 'js-send-buffer)
-			    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
-			    (local-set-key "\C-cl" 'js-load-file-and-go)
-			    ))
-
-(setenv "NODE_NO_READLINE" "1")
-(setq httpd-root "~/Desktop")
+(defun myJs2ModeHook()
+  (company-tern t)
+  (flycheck-mode t)
+  (tern-mode t))
 ;;END JAVASCRIPT
 
 
@@ -225,8 +194,7 @@
   ;; company is an optional dependency. You have to
   ;; install it separately via package-install
   ;; `M-x package-install [ret] company`
-  ;;(company-mode +1)
-  )
+  (company-mode +1))
 
 ;; aligns annotation to the right hand side
 (setq company-tooltip-align-annotations t)
@@ -264,7 +232,7 @@
  '(helm-mode nil)
  '(package-selected-packages
    (quote
-    (helm-projectile win-switch web-mode web-beautify unicode-fonts tide tern-auto-complete smooth-scrolling smex rainbow-delimiters projectile powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide impatient-mode ido-vertical-mode ido-ubiquitous helm-c-yasnippet expand-region emmet-mode color-theme-modern browse-kill-ring ace-jump-mode ac-js2))))
+    (company-tern company helm-projectile win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters projectile powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide helm-c-yasnippet expand-region emmet-mode color-theme-modern browse-kill-ring ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
