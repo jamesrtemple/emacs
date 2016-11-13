@@ -7,3 +7,5 @@ ido.last
 init.el~
 recentf
 smex-items
+#*
+.#*

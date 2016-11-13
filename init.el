@@ -5,14 +5,24 @@
 
 
 ;;Setup options that are invalid in the terminal
+;;or that I only want in graphical version
 (when (display-graphic-p)
   (scroll-bar-mode 0)                              ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                ;;Set toolbar off
-  (fringe-mode 5)                                  ;;Enable fringes  
+  (fringe-mode 5)                                  ;;Enable fringes
+  (set-frame-size (selected-frame) 160 60) 
 )
 
 (put 'narrow-to-region 'disabled nil)            
 (global-visual-line-mode)                        ;;Make line wrap act good
+
+
+;; scroll one line at a time (less "jumpy" than defaults)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
+(setq scroll-step 1)
+
 
 ;;Setup preferred theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -223,6 +233,10 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 
+;;MINIMAP
+(minimap-mode)
+(setq minimap-window-location 'right)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -232,7 +246,7 @@
  '(helm-mode nil)
  '(package-selected-packages
    (quote
-    (company-tern company helm-projectile win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters projectile powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide helm-c-yasnippet expand-region emmet-mode color-theme-modern browse-kill-ring ace-jump-mode))))
+    (minimap company-tern company helm-projectile win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters projectile powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide helm-c-yasnippet expand-region emmet-mode color-theme-modern browse-kill-ring ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
