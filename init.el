@@ -1,8 +1,4 @@
 ;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
-(setq ansi-color-names-vector                    ;;What does this do? Copied from customize section.
-      ["#2e3436" "#a40000" "#4e9a06" "#c4a000"
-       "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
-
 (setq auto-save-default nil)                     ;;Disable auto-saved files
 (setq make-backup-files nil)                     ;;Disable auto-backup files
 (setq inhibit-startup-message t)                 ;;No start screen
@@ -22,8 +18,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/colorthemes")
 (if (display-graphic-p)
-    (progn
-      (load-theme 'ample t)))
+    (load-theme 'ample t))
 
 
 ;;MELPA
@@ -43,7 +38,7 @@
        (prefer-coding-system 'utf-8)))
 
 
-;;POWERLINE
+;;MODELINE
 (powerline-vim-theme)
 
  
@@ -60,20 +55,20 @@
 
 
 ;;IDO
-(ido-mode 1)
-(ido-everywhere 1)
-(ido-ubiquitous-mode 1)
-(setq org-completion-use-ido t)
-(setq magit-completing-read-function 'magit-ido-completing-read)
-(ido-vertical-mode 1)
-(setq ido-vertical-define-keys 'C-n-and-C-p-only)
+;; (ido-mode 1)
+;; (ido-everywhere 1)
+;; (ido-ubiquitous-mode 1)
+;; (setq org-completion-use-ido t)
+;; (setq magit-completing-read-function 'magit-ido-completing-read)
+;; (ido-vertical-mode 1)
+;; (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 
 
-;;SMEX
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; ;;SMEX
+;; (smex-initialize)
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
 ;;EXPAND REGION
@@ -178,9 +173,8 @@
 (add-hook 'markdown-mode-hook 'pandoc-mode)
 
 
-;;----------------------------------------------------------------------
+
 ;;JAVASCRIPT
-;;
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 (add-hook 'js-mode-hook 'js2-minor-mode)
@@ -196,12 +190,14 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-n")
 
+
 ;;TERN
 (add-hook 'js2-mode-hook (lambda ()
 			   (tern-mode t)))
 (eval-after-load 'tern '(progn
 			  (require 'tern-auto-complete)
 			  (tern-ac-setup)))
+
 
 ;;NODE REPL
 (setq inferior-js-program-command "node")
@@ -214,7 +210,6 @@
 			    ))
 
 (setenv "NODE_NO_READLINE" "1")
-
 (setq httpd-root "~/Desktop")
 ;;END JAVASCRIPT
 
@@ -243,23 +238,22 @@
 
 ;; format options
 (setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
+;;END TYPESCRIPT
 
 
 ;;PROJECTILE
 (setq projectile-indexing-method 'native)
 
 
+;;HELM
+(require 'helm)
+(require 'helm-config)
+(helm-mode 1)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
-
-
-
-(defun prompt ()
-  "Open a shell below the current window"
-  (interactive)
-  (progn
-    (split-window-below -10)
-    (other-window 1)
-    (shell)))
 
 
 (custom-set-variables
@@ -267,12 +261,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("fe349b21bb978bb1f1f2db05bc87b2c6d02f1a7fe3f27584cd7b6fbf8e53391a" "5eb4b22e97ddb2db9ecce7d983fa45eb8367447f151c7e1b033af27820f43760" "b8c5adfc0230bd8e8d73450c2cd4044ad7ba1d24458e37b6dec65607fc392980" "8530b2f7b281ea6f263be265dd8c75b502ecd7a30b9a0f28fa9398739e833a35" "1a094b79734450a146b0c43afb6c669045d7a8a5c28bc0210aba28d36f85d86f" "9bd5ee2b24759fbc97f86c2783d1bf8f883eb1c0dd2cf7bda2b539cd28abf6a9" "2d5c40e709543f156d3dee750cd9ac580a20a371f1b1e1e3ecbef2b895cf0cd2" "2047464bf6781156ebdac9e38a17b97bd2594b39cfeaab561afffcbbe19314e2" "392f19e7788de27faf128a6f56325123c47205f477da227baf6a6a918f73b5dc" "a455366c5cdacebd8adaa99d50e37430b0170326e7640a688e9d9ad406e2edfd" default)))
+ '(helm-mode nil)
  '(package-selected-packages
    (quote
-    (tide projectile color-theme-modern win-switch web-mode web-beautify unicode-fonts tern-auto-complete smooth-scrolling smex rainbow-delimiters powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide impatient-mode ido-vertical-mode ido-ubiquitous helm-c-yasnippet flycheck expand-region emms emmet-mode browse-kill-ring ace-jump-mode ac-js2))))
+    (helm-projectile win-switch web-mode web-beautify unicode-fonts tide tern-auto-complete smooth-scrolling smex rainbow-delimiters projectile powerline pandoc-mode org-bullets neotree markdown-mode magit js2-refactor js-comint indent-guide impatient-mode ido-vertical-mode ido-ubiquitous helm-c-yasnippet expand-region emmet-mode color-theme-modern browse-kill-ring ace-jump-mode ac-js2))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
