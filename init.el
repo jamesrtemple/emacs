@@ -15,7 +15,7 @@
 
 (put 'narrow-to-region 'disabled nil)            
 (global-visual-line-mode)                        ;;Make line wrap act good
-
+(setq explicit-shell-file-name "/bin/zsh")
 
 ;; scroll one line at a time (less "jumpy" than defaults)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
@@ -105,17 +105,6 @@
 (global-set-key (kbd "M-s M-s") 'yas-ido-expand)
 (global-set-key (kbd "M-s s") 'yas-expand)
 ;(yas-global-mode 1)
-
-
-;;AUTO COMPLETE
-;;  Loaded after yasnippet so that they can work together
-;;  Sets trigger to work with yasnippet on tab. If word in yasnippet, tab activates yasnippet.
-;; (require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20140824.1658/dict")
-;; (ac-config-default)
-;; (ac-set-trigger-key "TAB")
-;; (ac-set-trigger-key "<tab>")
-;; (put 'dired-find-alternate-file 'disabled nil)
 
 
 ;;NEOTREE
