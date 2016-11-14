@@ -1,1 +1,1 @@
-("~/Documents/Programming/TestCLI/" "~/.emacs.d/")
+("~/.emacs.d/" "~/Documents/Programming/Typescript/" "~/Documents/Programming/TestCLI/")
