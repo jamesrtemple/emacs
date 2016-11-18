@@ -159,6 +159,13 @@
 (require 'company)
 (add-to-list 'company-backends 'company-tern)
 (global-company-mode)
+(company-quickhelp-mode 1)
+
+
+;;HTML
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-hook 'web-mode 'emmet-mode)
+(add-hook 'web-mode 'yas-minor-mode)
 
 
 ;;JAVASCRIPT
@@ -226,3 +233,18 @@
 (minimap-mode)
 (setq minimap-window-location 'right)
 (setq minimap-major-modes '(prog-mode typescript-mode))
+(put 'dired-find-alternate-file 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
