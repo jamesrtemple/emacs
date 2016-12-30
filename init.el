@@ -9,11 +9,15 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                              ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                ;;Set toolbar off
-  (fringe-mode 5)                                  ;;Enable fringes
+  (fringe-mode 10)                                  ;;Enable fringes
   (set-frame-size (selected-frame) 160 60) 
 )
 
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)            
+(setq ring-bell-function 'ignore)                ;;Turn off that damn bell!
+
 (global-visual-line-mode)                        ;;Make line wrap act good
 (setq explicit-shell-file-name "/bin/zsh")
 
@@ -58,6 +62,29 @@
 (setq win-switch-window-threshold 1)
 (setq win-switch-idle-time 15)
 
+
+;;TAB-BAR
+(tabbar-mode 1)
+(setq tabbar-use-images t)
+(setq tabbar-background-color "#959A79") ;; the color of the tabbar background
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(tabbar-button ((t (:inherit tabbar-default :foreground "dark red"))) nil (quote (tabbar-highlight ((t (:underline t))))))
+ '(tabbar-default ((t (:inherit variable-pitch :background "#959A79" :foreground "black" :weight bold)))))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (all-the-icons tabbar company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
+ '(tabbar-separator (quote (1.5))))
+ 
 
 ;; BUFFER SWITCHING
 (global-set-key (kbd "C-|") 'ibuffer)
@@ -110,7 +137,24 @@
 ;;NEOTREE
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
-(setq neo-window-width 40)
+(setq neo-smart-open t)
+(setq neo-window-width 50)
+(setq neo-persist-show nil)
+;;(setq neo-window-fixed-size nil)
+;; (add-hook 'neo-change-root-hook
+;;           (lambda () (neo-buffer--with-resizable-window
+;;                  (let ((fit-window-to-buffer-horizontally t))
+;;                    (fit-window-to-buffer)))))
+
+;; (defun neotree-resize-window (&rest _args)
+;;     "Resize neotree window."
+;;     (interactive)
+;;     (neo-buffer--with-resizable-window
+;;      (let ((fit-window-to-buffer-horizontally t))
+;;        (fit-window-to-buffer))))
+
+;;(add-hook 'neo-change-root-hook #'neotree-resize-window)
+;;(add-hook 'neo-enter-hook #'neotree-resize-window)
 
 
 ;;TEXT MODE
@@ -140,13 +184,18 @@
 (setq markdown-command "/usr/local/bin/pandoc")
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
-		    :height 1.5)
+		    :height 1.3)
 (set-face-attribute 'markdown-header-face-1 nil
 		    :inherit markdown-header-face
-		    :height 1.5)
+		    :height 1.3)
 (set-face-attribute 'markdown-header-face-2 nil
 		    :inherit markdown-header-face
-		    :height 1.4)
+		    :height 1.2)
+(set-face-attribute 'markdown-header-face-3 nil
+		    :height 1.1)
+(set-face-attribute 'markdown-header-face-4 nil
+		    :inherit markdown-header-face
+		    :height 1.0)
 (add-hook 'markdown-mode-hook 'flyspell-mode 1)
 
 
@@ -230,21 +279,12 @@
 
 
 ;;MINIMAP
-(minimap-mode)
-(setq minimap-window-location 'right)
-(setq minimap-major-modes '(prog-mode typescript-mode))
+;; (minimap-mode)
+;; (setq minimap-window-location 'right)
+;; (setq minimap-major-modes '(prog-mode typescript-mode))
+
+
+
+
+
 (put 'dired-find-alternate-file 'disabled nil)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
