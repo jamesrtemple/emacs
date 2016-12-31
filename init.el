@@ -55,7 +55,24 @@
 
 
 ;;MODELINE
-(powerline-vim-theme)
+(powerline-center-theme)
+(setq powerline-arrow-shape 'curve)
+(setq powerline-default-separator 'curve)
+;; (set-face-attribute 'mode-line nil
+;;                     :foreground "White"
+;;                     :background "DarkOrange"
+;;                     :box nil)
+
+
+;;TAB BAR
+(tabbar-mode 1)
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'tabbar-ruler)
+(setq tabbar-ruler-global-tabbar t)    ; get tabbar
+;;(setq tabbar-ruler-global-ruler t)     ; get global ruler
+(setq tabbar-ruler-popup-menu t)       ; get popup menu.
+(setq tabbar-ruler-popup-toolbar t)    ; get popup toolbar
+;;(setq tabbar-ruler-popup-scrollbar t)  ; show scroll-bar on mouse-move
 
  
 ;;WIN-SWITCH
@@ -274,7 +291,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
+    (tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
  '(tabbar-separator (quote (1.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
