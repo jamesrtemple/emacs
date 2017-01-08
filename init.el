@@ -56,8 +56,8 @@
 
 ;;MODELINE
 (powerline-center-theme)
-(setq powerline-arrow-shape 'curve)
-(setq powerline-default-separator 'curve)
+;;(setq powerline-arrow-shape 'curve)
+;;(setq powerline-default-separator 'curve)
 ;; (set-face-attribute 'mode-line nil
 ;;                     :foreground "White"
 ;;                     :background "DarkOrange"
@@ -279,9 +279,9 @@
 
 
 ;;MINIMAP
-;; (minimap-mode)
-;; (setq minimap-window-location 'right)
-;; (setq minimap-major-modes '(prog-mode typescript-mode))
+;;(minimap-mode)
+;;(setq minimap-window-location 'right)
+;;(setq minimap-major-modes '(prog-mode typescript-mode))
 
 
 (custom-set-variables
