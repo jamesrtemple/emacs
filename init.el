@@ -138,7 +138,7 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-smart-open t)
-(setq neo-window-width 50)
+(setq neo-window-width 40)
 (setq neo-persist-show nil)
 ;;(setq neo-window-fixed-size nil)
 ;; (add-hook 'neo-change-root-hook
