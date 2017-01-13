@@ -14,7 +14,22 @@
 )
 
 
-(put 'dired-find-alternate-file 'disabled nil)
+;; mac specific settings
+;; key bindings
+;; 'control, 'alt, 'meta, 'super, 'hyper,
+;; mac-command-modifier
+;; mac-function-modifier
+;; mac-control-modifier
+;; mac-option-modifier
+;; mac-right-command-modifier
+;; mac-right-control-modifier
+;; mac-right-option-modifier
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'control)
+  (setq mac-option-modifier 'meta)
+  (setq mac-control-modifier 'super))
+
+
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)            
@@ -41,6 +56,16 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+
+
+;;DIRED 
+(put 'dired-find-alternate-file 'disabled nil)
+(add-hook 'dired-mode-hook
+ (lambda ()
+  (define-key dired-mode-map (kbd "^")
+    (lambda () (interactive) (find-alternate-file "..")))
+  ; was dired-up-directory
+))
 
 
 ;;MAC SPECIFIC SETTINGS
@@ -291,7 +316,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
+    (dired-icon tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
  '(tabbar-separator (quote (1.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
