@@ -58,30 +58,24 @@
 (package-initialize)
 
 
-;;DIRED 
+;;DIRED
+(require 'dired)
 (put 'dired-find-alternate-file 'disabled nil)
-(add-hook 'dired-mode-hook
- (lambda ()
-  (define-key dired-mode-map (kbd "^")
-    (lambda () (interactive) (find-alternate-file "..")))
-  ; was dired-up-directory
-  ))
+(define-key dired-mode-map (kbd "^")
+  (lambda () (interactive) (find-alternate-file "..")))
+(define-key dired-mode-map (kbd "C-\\")
+  (lambda () (interactive)
+    (let* ((file (dired-get-filename nil t)))
+      (message "Opening %s..." file)
+      (call-process "open" nil 0 nil file)
+      (message "Opening %s done" file))))
 
 ;;Load Dired X when Dired is loaded.
 (require 'dired-x)
 (setq dired-omit-mode t) 
 (setq-default dired-omit-files-p t)
 (setq dired-omit-files (concat dired-omit-files "\\|^\\..+$"))
-(global-set-key (kbd "C-0") 'dired-omit-mode)
-
-(defun dired-open-file ()
-  "In dired, open the file named on this line."
-  (interactive)
-  (let* ((file (dired-get-filename nil t)))
-    (message "Opening %s..." file)
-    (call-process "open" nil 0 nil file)
-    (message "Opening %s done" file)))
-(global-set-key (kbd "C-\\") 'dired-open-file)
+(define-key dired-mode-map (kbd ")") 'dired-omit-mode)
 
 
 ;;MAC SPECIFIC SETTINGS
