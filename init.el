@@ -65,7 +65,22 @@
   (define-key dired-mode-map (kbd "^")
     (lambda () (interactive) (find-alternate-file "..")))
   ; was dired-up-directory
-))
+  ))
+
+; Load Dired X when Dired is loaded.
+(add-hook 'dired-load-hook '(lambda () (require 'dired-x)))
+(setq dired-omit-mode t) 
+(setq-default dired-omit-files-p t)
+(setq dired-omit-files (concat dired-omit-files "\\|^\\..+$"))
+
+(defun dired-open-file ()
+  "In dired, open the file named on this line."
+  (interactive)
+  (let* ((file (dired-get-filename nil t)))
+    (message "Opening %s..." file)
+    (call-process "open" nil 0 nil file)
+    (message "Opening %s done" file)))
+(global-set-key (kbd "C-\\") 'dired-open-file)
 
 
 ;;MAC SPECIFIC SETTINGS
@@ -90,14 +105,14 @@
 
 
 ;;TAB BAR
-(tabbar-mode 1)
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-(require 'tabbar-ruler)
-(setq tabbar-ruler-global-tabbar t)    ; get tabbar
-;;(setq tabbar-ruler-global-ruler t)     ; get global ruler
-(setq tabbar-ruler-popup-menu t)       ; get popup menu.
-(setq tabbar-ruler-popup-toolbar t)    ; get popup toolbar
-;;(setq tabbar-ruler-popup-scrollbar t)  ; show scroll-bar on mouse-move
+;; (tabbar-mode 1)
+;; (add-to-list 'load-path "~/.emacs.d/lisp/")
+;; (require 'tabbar-ruler)
+;; (setq tabbar-ruler-global-tabbar t)    ; get tabbar
+;; ;;(setq tabbar-ruler-global-ruler t)     ; get global ruler
+;; (setq tabbar-ruler-popup-menu t)       ; get popup menu.
+;; (setq tabbar-ruler-popup-toolbar t)    ; get popup toolbar
+;; ;;(setq tabbar-ruler-popup-scrollbar t)  ; show scroll-bar on mouse-move
 
  
 ;;WIN-SWITCH
@@ -117,7 +132,6 @@
 
 ;; BUFFER SWITCHING
 (global-set-key (kbd "C-|") 'ibuffer)
-(global-set-key (kbd "C-\\") 'ido-switch-buffer)
 
 
 ;;EXPAND REGION
