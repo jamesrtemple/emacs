@@ -1,4 +1,4 @@
-;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
+;COMMON SETTINGS / BASIC EMACS CONFIGURATION
 (setq auto-save-default nil)                     ;;Disable auto-saved files
 (setq make-backup-files nil)                     ;;Disable auto-backup files
 (setq inhibit-startup-message t)                 ;;No start screen
@@ -67,11 +67,12 @@
   ; was dired-up-directory
   ))
 
-; Load Dired X when Dired is loaded.
-(add-hook 'dired-load-hook '(lambda () (require 'dired-x)))
+;;Load Dired X when Dired is loaded.
+(require 'dired-x)
 (setq dired-omit-mode t) 
 (setq-default dired-omit-files-p t)
 (setq dired-omit-files (concat dired-omit-files "\\|^\\..+$"))
+(global-set-key (kbd "C-0") 'dired-omit-mode)
 
 (defun dired-open-file ()
   "In dired, open the file named on this line."
