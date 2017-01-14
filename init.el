@@ -331,7 +331,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dired-icon tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
+    (suscolors-theme dired-icon tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
  '(tabbar-separator (quote (1.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
