@@ -10,3 +10,6 @@ smex-items
 #*
 .#*
 recentf
+/elpa/archives/**
+projectile.cache
+projectile-bookmarks.eld
