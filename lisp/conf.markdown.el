@@ -8,8 +8,8 @@
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
 		    :height 2.0
-		    :family "Bradley Hand"
-		    :foreground "orange3")
+		    :family "Baskerville"
+		    :foreground "orange2")
 (set-face-attribute 'markdown-header-face-1 nil
 		    :inherit markdown-header-face
 		    :height 2.0)
@@ -17,7 +17,8 @@
 		    :inherit markdown-header-face
 		    :height 1.5)
 (set-face-attribute 'markdown-header-face-3 nil
-		    :height 1.3)
+		    :height 1.0
+   		    :foreground "orange3")
 (set-face-attribute 'markdown-header-face-4 nil
 		    :inherit markdown-header-face
 		    :height 1.0)
