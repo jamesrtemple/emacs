@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: @Component
+# key: @Component
+# --
+@Component({
+    selector: '$1',
+    template: $2
+})
+export class $3 {
+       $0
+}

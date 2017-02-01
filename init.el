@@ -30,10 +30,10 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+(load "conf.modeline")
 (load "conf.theme")
 (load "conf.mac")
 (load "conf.dired")
-(load "conf.modeline")
 (load "conf.winswitch_ace")
 (load "conf.neotree")
 (load "conf.helm")
