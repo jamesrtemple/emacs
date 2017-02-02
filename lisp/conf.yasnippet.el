@@ -23,7 +23,4 @@
         (delete-char (- init-word original-point))
         (insert key)
         (yas-expand)))))
-(global-set-key (kbd "M-s M-s") 'yas-ido-expand)
-(global-set-key (kbd "M-s s") 'yas-expand)
-(global-set-key (kbd "M-s h") 'helm-yas-complete)
 

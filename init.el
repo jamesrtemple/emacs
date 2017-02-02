@@ -48,7 +48,7 @@
 (load "conf.javascript")
 (load "conf.typescript")
 (load "conf.projectile")
-
+(load "conf.keybindings")
 
 
 (custom-set-variables
