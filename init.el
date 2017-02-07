@@ -20,7 +20,7 @@
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
   (fringe-mode 15)                                  ;;Enable fringes
-  (set-frame-size (selected-frame) 160 60) 
+  (set-frame-size (selected-frame) 90 60)
 )
 (global-visual-line-mode)                           ;;Make line wrap act good
 (set-frame-font "Menlo-14")
@@ -80,7 +80,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (leuven-theme color-theme-sanityinc-tomorrow gruvbox-theme suscolors-theme dired-icon tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
+    (osx-pseudo-daemon leuven-theme color-theme-sanityinc-tomorrow gruvbox-theme suscolors-theme dired-icon tabbar-ruler tabbar all-the-icons company-quickhelp helm-descbinds impatient-mode win-switch web-mode web-beautify unicode-fonts tide smooth-scrolling rainbow-delimiters powerline pandoc-mode org-bullets neotree minimap markdown-mode magit json-mode js2-refactor js-comint indent-guide helm-projectile helm-c-yasnippet expand-region emmet-mode company-tern color-theme-modern browse-kill-ring ace-jump-mode)))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
  '(tabbar-separator (quote (1.5)))

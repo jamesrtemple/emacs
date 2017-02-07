@@ -8,24 +8,39 @@
 (setq markdown-command "/usr/local/bin/markdown")
 (setq markdown-header-scaling 1)
 
+
+;; (add-hook 'markdown-mode-hook 
+;;   (lambda ()
+;;     (setq buffer-face-mode-face
+;; 	  '(:family "Averia-sans" :height 180))
+;;    (buffer-face-mode)))
+
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
-		    :family "Baskerville"
-		    :height 2.0
-		    :foreground "orange2")
+		    :family "Averia-sans"
+		    :height 1.8
+		    :foreground "orange2"
+		    :weight 'ultra-light
+		    )
+
 (set-face-attribute 'markdown-header-face-1 nil
-		    :height 2.0
-		    :inherit markdown-header-face)
+		    :height 1.8
+		    :inherit markdown-header-face
+		    )
+
 (set-face-attribute 'markdown-header-face-2 nil
-		    :height 1.6
+		    :height 1.4
 		    :inherit markdown-header-face)
+
 (set-face-attribute 'markdown-header-face-3 nil
 		    :height 1.2
    		    :foreground "orange3")
+
 (set-face-attribute 'markdown-header-face-4 nil
 		    :height 1.0
 		    :inherit markdown-header-face
        		    :foreground "orange3")
+
 (add-hook 'markdown-mode-hook 'flyspell-mode 1)
 
 
