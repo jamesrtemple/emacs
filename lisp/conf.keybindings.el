@@ -2,33 +2,35 @@
 (setq mac-option-modifier 'meta)
 (setq mac-control-modifier 'super)
 
-(global-set-key [f8] 'neotree-toggle)
-(global-set-key (kbd "s-o") 'win-switch-enter)
-(global-set-key (kbd "M-p") 'ace-window)
-(global-set-key (kbd "C-z") 'ace-jump-mode)
-(global-set-key (kbd "C-|") 'ibuffer)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+(global-set-key (kbd "s-n") 'neotree-toggle)
+(global-set-key (kbd "s-o") 'win-switch-enter)
+(global-set-key (kbd "s-j") 'ace-jump-mode)
+(global-set-key (kbd "s-y") 'helm-yas-complete)
+
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-(global-set-key (kbd "M-s M-s") 'yas-ido-expand)
-(global-set-key (kbd "M-s s") 'yas-expand)
-(global-set-key (kbd "M-s h") 'helm-yas-complete)
-
-(global-set-key (kbd "M-s M-s") 'yas-ido-expand)
-(global-set-key (kbd "M-s s") 'yas-expand)
-(global-set-key (kbd "s-y") 'helm-yas-complete)
 
 
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
-(define-key dired-mode-map (kbd "^")
+
+;MOVE INTO A DIRECTORY
+(define-key dired-mode-map (kbd "C-k")
+  (lambda () (interactive) (dired-find-alternate-file)))
+
+;MOVE UP A DIRECTORY
+(define-key dired-mode-map (kbd "C-j")
   (lambda () (interactive) (find-alternate-file "..")))
+
+
 (define-key dired-mode-map (kbd "C-\\")
   (lambda () (interactive)
     (let* ((file (dired-get-filename nil t)))
