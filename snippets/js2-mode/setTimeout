@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: setTimeout
+# key: setTimeout
+# --
+setTimeout(function ${1:foo}() {
+  `yas-selected-text`$0
+}, ${2:0});

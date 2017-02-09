@@ -16,11 +16,15 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
 (global-set-key (kbd "M-s M-s") 'yas-ido-expand)
 (global-set-key (kbd "M-s s") 'yas-expand)
 (global-set-key (kbd "M-s h") 'helm-yas-complete)
 
-(js2r-add-keybindings-with-prefix "C-c C-n")
+(global-set-key (kbd "M-s M-s") 'yas-ido-expand)
+(global-set-key (kbd "M-s s") 'yas-expand)
+(global-set-key (kbd "s-y") 'helm-yas-complete)
+
 
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
 (define-key dired-mode-map (kbd "^")

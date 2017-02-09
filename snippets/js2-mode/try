@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: try
+# key: try
+# --
+try {
+  `yas-selected-text`$0
+}
+catch (${1:ex}) {
+
+}
+finally {
+
+}
+

@@ -1,7 +1,6 @@
 ;;YASNIPPET
 ;;  Loaded before auto complete so that they can work together
 (require 'yasnippet)
-(setq yas-wrap-around-region 1)
 
 ;; Completing point by some yasnippet key
 (defun yas-ido-expand ()

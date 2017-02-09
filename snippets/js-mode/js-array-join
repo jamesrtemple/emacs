@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: js-array-join
-# key: js-join
-# binding: direct-keybinding
-# --
-${1:arr}.join($2);$0

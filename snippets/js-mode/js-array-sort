@@ -1,9 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: js-array-sort
-# key: js-sort
-# binding: direct-keybinding
-# --
-${1:arr}.sort(function(a, b) {
-    return a>b;
-});
-$0

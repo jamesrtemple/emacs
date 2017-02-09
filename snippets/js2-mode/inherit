@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: inherit: Create a new class that extends a base
+# key: inherit
+# --
+function ${1:ClassName}() {
+  ${2:BaseClass}.call(this);
+  $0
+}
+
+$1.prototype = Object.create($2.prototype);
+$1.prototype.constructor = $1;

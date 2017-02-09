@@ -14,7 +14,7 @@
  '(fci-rule-color "#515151")
  '(package-selected-packages
    (quote
-    (win-switch web-mode web-beautify use-package unicode-fonts tide tabbar suscolors-theme sublimity spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets nyan-mode neotree minimap markdown-mode magit leuven-theme json-mode js2-refactor js-comint indent-guide impatient-mode helm-projectile helm-descbinds helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow color-theme-modern browse-kill-ring ace-window ace-jump-mode)))
+    (win-switch web-mode web-beautify use-package unicode-fonts tide tabbar suscolors-theme sublimity spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets nyan-mode neotree minimap markdown-mode magit leuven-theme json-mode js-comint indent-guide impatient-mode helm-projectile helm-descbinds helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow color-theme-modern browse-kill-ring ace-window ace-jump-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
