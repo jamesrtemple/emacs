@@ -1,3 +1,18 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (helm-company win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme ace-window ace-jump-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
 ;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (setq auto-save-default nil)                        ;;Disable auto-saved files
@@ -50,17 +65,3 @@
 (load "conf.typescript")
 (load "conf.projectile")
 (load "conf.keybindings")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (helm-company win-switch web-mode web-beautify use-package unicode-fonts tide tabbar suscolors-theme sublimity spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets nyan-mode neotree multiple-cursors minimap markdown-mode magit leuven-theme json-mode js2-mode js-comint indent-guide impatient-mode helm-projectile helm-descbinds helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow color-theme-modern browse-kill-ring ample-theme ace-window ace-jump-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
