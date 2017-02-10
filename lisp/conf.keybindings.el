@@ -18,6 +18,8 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
+(define-key company-mode-map (kbd "s-;") 'helm-company)
+(define-key company-active-map (kbd "s-;") 'helm-company)
 
 
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
