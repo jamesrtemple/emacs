@@ -51,6 +51,9 @@
 
 (setq winner-mode t)
 
+(setq-default indent-tabs-mode nil)
+(setq tab-stop-list (number-sequence 4 120 4))
+
 (load "conf.modeline")
 (load "conf.theme")
 (load "conf.mac")

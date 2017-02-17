@@ -25,11 +25,11 @@
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
 
 ;MOVE INTO A DIRECTORY
-(define-key dired-mode-map (kbd "C-k")
+(define-key dired-mode-map (kbd "C-j")
   (lambda () (interactive) (dired-find-alternate-file)))
 
 ;MOVE UP A DIRECTORY
-(define-key dired-mode-map (kbd "C-j")
+(define-key dired-mode-map (kbd "C-k")
   (lambda () (interactive) (find-alternate-file "..")))
 
 

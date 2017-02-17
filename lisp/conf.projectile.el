@@ -1,3 +1,5 @@
 ;;PROJECTILE
-(setq projectile-indexing-method 'native)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
 (helm-projectile-on)
+(setq projectile-indexing-method 'alien)
