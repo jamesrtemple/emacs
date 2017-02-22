@@ -29,7 +29,7 @@
   (lambda () (interactive) (dired-find-alternate-file)))
 
 ;MOVE UP A DIRECTORY
-(define-key dired-mode-map (kbd "C-k")
+(define-key dired-mode-map (kbd "C-l")
   (lambda () (interactive) (find-alternate-file "..")))
 
 

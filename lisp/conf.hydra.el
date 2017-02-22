@@ -1,5 +1,4 @@
-(defhydra hydra-window-menu (:color pink
-				    :hint nil)
+(defhydra hydra-window-menu (:color pink :hint nil)
   "
 _b_: split horizontal          _v_: split vertical
 _s_: swap window               _d_: delete window
@@ -33,4 +32,5 @@ _i_nfo: info mode"
   ("f" describe-function)
   ("v" describe-variable)
   ("i" helm-info-org))
+
 (global-set-key (kbd "<f1>") 'yt-hydra/help/body)
