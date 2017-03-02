@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: jasmine describe
+# key: jasdescribe
+# --
+describe('$1', () => {
+
+    beforeEach(() => {
+
+    });
+
+    $0
+});
