@@ -65,7 +65,7 @@ _i_nfo: info mode"
         ("<tab>" hydra-master/body "back")
         ("<ESC>" nil "quit")
         ("a"   projectile-ag)
-        ("A"   projectile-grep)
+        ("A"   helm-projectile-grep)
         ("b"   projectile-switch-to-buffer)
         ("B"   projectile-switch-to-buffer-other-window)
         ("c"   projectile-run-async-shell-command-in-root)
