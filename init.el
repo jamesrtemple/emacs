@@ -31,7 +31,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(setq winner-mode t)
+(setq multi-term-program "/bin/zsh")
 
 (setq-default indent-tabs-mode nil)
 (setq tab-stop-list (number-sequence 4 120 4))
@@ -59,6 +59,8 @@
 (load "conf.projectile")
 (load "conf.keybindings")
 
+(setq winner-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,10 +68,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(spaceline-highlight-face ((t (:foreground "azure2" :background "DodgerBlue3" \.\.\.)))))
+ '(spaceline-highlight-face ((t (:foreground "azure2" :background "LightBlue4" \.\.\.)))))
