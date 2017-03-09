@@ -40,6 +40,16 @@
 
 (load-theme 'material t)
 
+(setq tabbar-background-color "#263438") ;; the color of the tabbar background
+(custom-set-faces
+ '(tabbar-default ((t (:inherit variable-pitch :background "gray32" :foreground "ivory2" :weight bold))))
+ '(tabbar-button ((t (:background "gray32" :foreground "ivory2" :weight bold))))
+ '(tabbar-button-highlight ((t (:inherit tabbar-default))))
+ '(tabbar-highlight ((t (:underline t))))
+ '(tabbar-selected ((t (:inherit tabbar-default :background "DodgerBlue3"))))
+ '(tabbar-separator ((t (:inherit tabbar-default :background "#263438"))))
+ '(tabbar-unselected ((t (:inherit tabbar-default)))))
+
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
@@ -68,7 +78,8 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode)))
+ '(tabbar-separator (quote (0.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
