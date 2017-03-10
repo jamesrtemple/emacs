@@ -50,6 +50,9 @@
                         (bookmarks . 5)
 			(projects . 5)))
 
+(setq dashboard-banner-logo-title "'Sup Yo?")
+;;(setq dashboard-startup-banner "~/.emacs.d/emacslogo.png")
+
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
