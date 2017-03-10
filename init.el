@@ -20,7 +20,7 @@
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
   (fringe-mode 15)                                  ;;Enable fringes
-  (set-frame-size (selected-frame) 90 60)
+  (set-frame-size (selected-frame) 90 50)
 )
 (global-visual-line-mode)                           ;;Make line wrap act good
 (set-frame-font "Menlo-14")
@@ -43,6 +43,12 @@
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 
 (window-numbering-mode)
+
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+(setq dashboard-items '((recents  . 5)
+                        (bookmarks . 5)
+			(projects . 5)))
 
 (load "conf.modeline")
 (load "conf.mac")
@@ -90,5 +96,5 @@
  '(org-tags-column 70)
  '(package-selected-packages
    (quote
-    (window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (dashboard page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 

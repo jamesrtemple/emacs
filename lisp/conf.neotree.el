@@ -5,7 +5,7 @@
 
 ;; every time when the neotree window is  opened, it will try to find current
 ;; file and jump to node.
-(setq-default neo-smart-open t)
+(setq-default neo-smart-open nil)
 
 ;; change root automatically when running `projectile-switch-project`
 (setq projectile-switch-project-action 'neotree-projectile-action)
