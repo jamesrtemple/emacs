@@ -42,6 +42,8 @@
 
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 
+(window-numbering-mode)
+
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
@@ -68,8 +70,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-level-1 ((t (:box nil :weight bold :height 1.3))))
- '(org-level-2 ((t (:inherit outline-2 :box nil :height 1.2))))
  '(spaceline-highlight-face ((t (:foreground "azure2" :background "LightBlue4" \.\.\.))))
  '(tabbar-button ((t (:background "gray32" :foreground "ivory2" :weight bold))))
  '(tabbar-button-highlight ((t (:inherit tabbar-default))))
@@ -90,5 +90,5 @@
  '(org-tags-column 70)
  '(package-selected-packages
    (quote
-    (jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 
