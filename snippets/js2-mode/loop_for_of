@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for loop over items in collection
+# key: forof
+# --
+for(${1:item} of ${2:collection}) {
+  $0
+}

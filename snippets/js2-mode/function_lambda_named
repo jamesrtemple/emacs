@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: function: Lambda assigned to variable
+# key: fn
+# --
+let $1 = ($2) => {
+  $0
+};

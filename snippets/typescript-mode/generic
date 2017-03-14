@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Generic
+# key: generic
+# --
+let x = new Type<T>();

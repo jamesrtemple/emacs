@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: property
+# key: prop
+# --
+get ${1:propName}(): ${2:type} { return this._$1; }
+set $1(${3:value}: $2) { this._$1 = $3 }

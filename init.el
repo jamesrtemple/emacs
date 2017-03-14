@@ -44,15 +44,6 @@
 
 (window-numbering-mode)
 
-(require 'dashboard)
-(dashboard-setup-startup-hook)
-(setq dashboard-items '((recents  . 5)
-                        (bookmarks . 5)
-			(projects . 5)))
-
-(setq dashboard-banner-logo-title "'Sup Yo?")
-;;(setq dashboard-startup-banner "~/.emacs.d/emacslogo.png")
-
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
@@ -99,5 +90,5 @@
  '(org-tags-column 70)
  '(package-selected-packages
    (quote
-    (dashboard page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 

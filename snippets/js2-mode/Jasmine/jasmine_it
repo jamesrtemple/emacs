@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Jasmine it block
+# key: jas-it
+# --
+it('$1', () => {
+    $0
+});

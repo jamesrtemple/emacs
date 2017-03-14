@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: function: Basic Lambda
+# key: fn
+# --
+($1) => { $0 }

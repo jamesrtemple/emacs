@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Jasmine Describe block
+# key: jas-describe
+# --
+describe('$1', () => {
+
+    beforeEach(() => {
+
+    });
+
+    $0
+});
