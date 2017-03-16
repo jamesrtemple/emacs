@@ -32,6 +32,8 @@
 (package-initialize)
 
 (setq multi-term-program "/bin/zsh")
+(exec-path-from-shell-initialize)
+(setq flycheck-check-syntax-automatically '(mode-enabled idle-change))
 
 (setq-default indent-tabs-mode nil)
 (setq tab-stop-list (number-sequence 4 120 4))
@@ -90,5 +92,5 @@
  '(org-tags-column 70)
  '(package-selected-packages
    (quote
-    (page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (rainbow-mode exec-path-from-shell page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 
