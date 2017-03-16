@@ -23,6 +23,7 @@
 
 (global-set-key (kbd "s-g") 'magit-status)
 
+(global-set-key (kbd "s-t") 'get-term)
 
 ;;DIRED KEYMAP
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)

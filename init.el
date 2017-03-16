@@ -92,17 +92,14 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;;TERMINAL STUFF
-(setq explicit-shell-file-name "/bin/zsh")          ;;Default shell
-(setq multi-term-program "/bin/zsh")
-(exec-path-from-shell-initialize)
-
 ;;THEME STUFF
 (color-theme-sanityinc-tomorrow-night)
-;;(load-theme 'material t)
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
 
+(electric-pair-mode t)
+
+(load "conf.term")
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
