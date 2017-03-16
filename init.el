@@ -23,8 +23,7 @@
   (set-frame-size (selected-frame) 90 50)
 )
 (global-visual-line-mode)                           ;;Make line wrap act good
-(set-frame-font "Menlo-14")
-
+(set-frame-font "Menlo-13")
 
 ;;MELPA
 (require 'package)
@@ -43,8 +42,12 @@
 (load-theme 'material t)
 
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
-
 (window-numbering-mode)
+
+;;GIT GUTTER
+(global-git-gutter-mode t)
+(git-gutter:linum-setup)
+(custom-set-variables '(git-gutter:update-interval 2))
 
 (load "conf.modeline")
 (load "conf.mac")
@@ -92,5 +95,5 @@
  '(org-tags-column 70)
  '(package-selected-packages
    (quote
-    (rainbow-mode exec-path-from-shell page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
+    (git-gutter rainbow-mode exec-path-from-shell page-break-lines window-numbering jade karma multi-term rjsx-mode material-theme win-switch web-mode web-beautify use-package unicode-fonts tide tabbar spaceline smooth-scrolling rainbow-delimiters pandoc-mode osx-pseudo-daemon org-bullets neotree multiple-cursors monokai-theme markdown-mode magit json-mode js2-mode js-comint impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet expand-region emmet-mode company-tern company-quickhelp color-theme-sanityinc-tomorrow browse-kill-ring ample-theme all-the-icons-dired ace-window ace-jump-mode))))
 
