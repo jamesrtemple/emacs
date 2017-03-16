@@ -3,3 +3,6 @@
 (add-hook 'web-mode 'emmet-mode)
 (add-hook 'web-mode 'yas-minor-mode)
 (add-hook 'web-mode 'linum-mode)
+
+;;CSS
+(add-hook 'css-mode-hook #'rainbow-mode)

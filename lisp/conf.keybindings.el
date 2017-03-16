@@ -21,7 +21,10 @@
 (define-key company-mode-map (kbd "s-;") 'helm-company)
 (define-key company-active-map (kbd "s-;") 'helm-company)
 
+(global-set-key (kbd "s-g") 'magit-status)
 
+
+;;DIRED KEYMAP
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
 
 ;MOVE INTO A DIRECTORY
@@ -31,7 +34,6 @@
 ;MOVE UP A DIRECTORY
 (define-key dired-mode-map (kbd "C-l")
   (lambda () (interactive) (find-alternate-file "..")))
-
 
 (define-key dired-mode-map (kbd "C-\\")
   (lambda () (interactive)
