@@ -14,7 +14,10 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 (put 'dired-find-alternate-file 'disabled nil)
-(global-visual-line-mode)                           ;;Make line wrap act good
+;;(global-visual-line-mode)                           ;;Make line wrap act good
+
+(add-hook 'text-mode-hook '(lambda () (setq truncate-lines nil)))
+(add-hook 'prog-mode-hook '(lambda () (setq truncate-lines t)))
 
 ;;Setup options that are invalid in the terminal
 ;;or that I only want in graphical version
