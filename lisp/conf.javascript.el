@@ -5,6 +5,8 @@
 (yas-reload-all)
 (add-hook 'js2-mode-hook 'yas-minor-mode)
 
+(setq js-switch-indent-offset 8)
+
 (require 'flycheck)
 (add-hook 'js2-mode-hook 'myJs2ModeHook)
 

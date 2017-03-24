@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: Input Property
-# key: input
-# --
-@Input() public ${1:name}: ${2:type};$0

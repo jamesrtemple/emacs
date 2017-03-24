@@ -48,8 +48,7 @@
 (load "conf.text")
 (load "conf.org")
 (load "conf.markdown") ;;and pandoc
-(load "conf.yasnippet")
-(load "conf.company")
+(load "conf.completion")
 (load "conf.hydra")
 (load "conf.htmlcss")
 (load "conf.javascript")

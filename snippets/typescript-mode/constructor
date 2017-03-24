@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Contstructor
+# key: ctor
+# --
+constructor(${1:public ${2:Param}: ${3:Type}}) {$0}

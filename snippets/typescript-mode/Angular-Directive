@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Angular @Directive
+# key: directive
+# --
+@Directive({
+    selector: '[$1]',
+    ${2:host: {
+        '[$3]': '$4'
+    },}
+    providers: [$5]
+})
+export class ${6:DirectiveName} {$0}

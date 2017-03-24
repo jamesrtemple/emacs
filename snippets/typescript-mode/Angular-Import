@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: import
-# key: import
+# name: Angular import statement
+# key: ngImport
 # --
 import { $1 } from '$2';

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular @Output property
+# key: ngOutput
+# --
+@Output() ${1:onName}: EventEmitter<any> = new EventEmitter();

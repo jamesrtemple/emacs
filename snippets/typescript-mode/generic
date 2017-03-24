@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: Generic
+# name: Generic Variable
 # key: generic
 # --
-let x = new Type<T>();
+let ${1:x} = new ${2:Type}<${3:ofType}>();$0

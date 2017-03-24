@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular @HostListener
+# key: hostlistener
+# --
+@HostListener('${1:domevent}', ['$event'])

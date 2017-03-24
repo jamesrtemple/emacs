@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Angular Module - Simple
+# key: ngModule
+# --
+@NgModule({
+    imports: [$1],
+    exports: [$2],
+    declarations: [$3]
+})
+export class ${4:ModuleName} { }
