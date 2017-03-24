@@ -14,17 +14,15 @@
 
 ;; Add yasnippet support for all company backends
 ;; https://github.com/syl20bnr/spacemacs/pull/179
-(defvar company-mode/enable-yas t
-  "Enable yasnippet for all backends.")
+(defun autocomplete-show-snippets ()
+  "Show snippets in autocomplete popup."
+  (let ((backend (car company-backends)))
+    (unless (listp backend)
+      (setcar company-backends `(,backend :with company-yasnippet company-files)))))
 
-(defun company-mode/backend-with-yas (backend)
-  (if (or (not company-mode/enable-yas) (and (listp backend) (member 'company-yasnippet backend)))
-      backend
-    (append (if (consp backend) backend (list backend))
-            '(:with company-yasnippet))))
-
-(setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
-
+;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
+;; for what this line means
+(add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
 
 
 ;; Completing point by some yasnippet key
