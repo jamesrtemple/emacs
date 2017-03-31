@@ -1,4 +1,4 @@
- ;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
+;;COMMON SETTINGS / BASIC EMACS CONFIGURATION
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (setq auto-save-default nil)                        ;;Disable auto-saved files
 (setq make-backup-files nil)                        ;;Disable auto-backup files
@@ -38,7 +38,6 @@
 ;;(color-theme-sanityinc-tomorrow-night)
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
-
 (electric-pair-mode t)
 
 (load "conf.term")

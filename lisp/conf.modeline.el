@@ -1,11 +1,11 @@
 (require 'powerline)
-;;(powerline-center-theme)
-;;(setq powerline-default-separator 'bar)
+(powerline-center-theme)
+(setq powerline-default-separator 'wave)
+(setq powerline-height 20)
+(setq powerline-raw " ")
+(setq ns-use-srgb-colorspace nil)
 
-(use-package spaceline-all-the-icons :after spaceline)
-
-(use-package spaceline :after powerline
-  :config (setq-default mode-line-format '("%e" (:eval (spaceline-ml-ati)))))
-
-(custom-set-faces
- '(spaceline-highlight-face ((t (:foreground "azure2" :background "LightBlue4" ...)))))
+(defun remove-mode-line-box (&rest args)
+  (set-face-attribute 'mode-line nil :box nil :underline nil)
+  (set-face-attribute 'mode-line-inactive nil :box nil :underline nil))
+(remove-mode-line-box)

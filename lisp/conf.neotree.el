@@ -21,7 +21,7 @@
 
 (setq neo-force-change-root t)
 
-(add-hook 'neotree-mode-hook (lambda () (setq-local mode-line-format nil)))
+;;(add-hook 'neotree-mode-hook (lambda () (setq-local mode-line-format nil)))
 
 ;; face customizations
 
