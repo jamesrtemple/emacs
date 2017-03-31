@@ -34,7 +34,8 @@
 (package-initialize)
 
 ;;THEME STUFF
-(color-theme-sanityinc-tomorrow-night)
+(load-theme 'seti t)
+;;(color-theme-sanityinc-tomorrow-night)
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
 
