@@ -14,7 +14,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 (put 'dired-find-alternate-file 'disabled nil)
-;;(global-visual-line-mode)                           ;;Make line wrap act good
+(global-visual-line-mode)                           ;;Make line wrap act good
 
 (add-hook 'text-mode-hook '(lambda () (setq truncate-lines nil)))
 (add-hook 'prog-mode-hook '(lambda () (setq truncate-lines t)))
@@ -34,8 +34,8 @@
 (package-initialize)
 
 ;;THEME STUFF
-(load-theme 'seti t)
-;;(color-theme-sanityinc-tomorrow-night)
+;;(load-theme 'seti t)
+(color-theme-sanityinc-tomorrow-night)
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
 (electric-pair-mode t)
