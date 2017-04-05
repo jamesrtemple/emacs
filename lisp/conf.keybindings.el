@@ -25,6 +25,8 @@
 
 (global-set-key (kbd "s-t") 'get-term)
 
+(global-set-key (kbd "s-v") 'visual-line-mode)
+
 ;;DIRED KEYMAP
 (define-key dired-mode-map (kbd ")") 'dired-omit-mode)
 
@@ -42,3 +44,13 @@
       (message "Opening %s..." file)
       (call-process "open" nil 0 nil file)
       (message "Opening %s done" file))))
+
+;;HORIZONTAL SCROLLING
+(defun my/scroll-right() (interactive) (scroll-right 2))
+(defun my/scroll-left() (interactive) (scroll-left 2))
+(global-set-key (kbd "<wheel-left>") 'my/scroll-right)
+(global-set-key (kbd "<double-wheel-left>") 'my/scroll-right)
+(global-set-key (kbd "<triple-wheel-left>") 'my/scroll-right)
+(global-set-key (kbd "<wheel-right>") 'my/scroll-left)
+(global-set-key (kbd "<double-wheel-right>") 'my/scroll-left)
+(global-set-key (kbd "<triple-wheel-right>") 'my/scroll-left)
