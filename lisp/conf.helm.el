@@ -14,3 +14,10 @@
 (setq helm-apropos-fuzzy-match t)
 (setq helm-lisp-fuzzy-completion t)
 (setq helm-completion-in-region-fuzzy-match t)
+
+;; Make helm open along the bottom of the frame across the whole width.
+(add-to-list 'display-buffer-alist
+                    `(,(rx bos "*helm" (* not-newline) "*" eos)
+                         (display-buffer-in-side-window)
+                         (inhibit-same-window . t)
+                         (window-height . 0.4)))

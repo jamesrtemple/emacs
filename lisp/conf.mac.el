@@ -6,7 +6,7 @@
        (setq mac-command-modifier 'control)
        (osx-pseudo-daemon-mode)
        (set-frame-font "Menlo-14")
-       (setq-default line-spacing 0.4)
+       (setq-default line-spacing 0.3)
        (setq ns-use-srgb-colorspace nil)
        (set-terminal-coding-system 'utf-8)
        (set-keyboard-coding-system 'utf-8)

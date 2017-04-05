@@ -9,3 +9,12 @@
   (set-face-attribute 'mode-line nil :box nil :underline nil)
   (set-face-attribute 'mode-line-inactive nil :box nil :underline nil))
 (remove-mode-line-box)
+
+(require 'delight)
+(delight 'company-mode nil 'company)
+(delight 'git-gutter-mode nil 'git-gutter)
+(delight 'helm-mode nil 'helm)
+(delight 'tide-mode nil 'tide)
+(delight 'eldoc-mode nil 'eldoc)
+(delight 'all-the-icons-dired-mode nil 'all-the-icons-dired)
+(delight 'tern-mode nil 'tern)

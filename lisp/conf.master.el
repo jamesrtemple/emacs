@@ -24,9 +24,8 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
-  (fringe-mode 15)                                  ;;Enable fringes
-  (set-frame-size (selected-frame) 90 50)
-)
+  (fringe-mode 0)                                   ;;Enable fringes
+  (set-frame-size (selected-frame) 90 50))
 
 ;;MELPA
 (require 'package)
@@ -34,8 +33,10 @@
 (package-initialize)
 
 ;;THEME STUFF
-(load-theme 'seti t)
+(load-theme 'gruvbox t)
+;;(load-theme 'gotham t)
 ;;(color-theme-sanityinc-tomorrow-night)
+
 (setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
 (electric-pair-mode t)
