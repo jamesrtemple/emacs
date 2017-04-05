@@ -54,10 +54,11 @@
 (load "conf.markdown") ;;and pandoc
 (load "conf.completion")
 (load "conf.hydra")
+(load "conf.registers")
 (load "conf.htmlcss")
 (load "conf.javascript")
 (load "conf.typescript")
 (load "conf.projectile")
 (load "conf.keybindings")
 
-(setq winner-mode t)
+(winner-mode 1)
