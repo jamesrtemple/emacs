@@ -28,4 +28,3 @@ _q_: Cancel
   ("s" bookmark-save)
   ("q" nil))
 
-(global-set-key (kbd "s-r") 'hydra-register-menu/body)

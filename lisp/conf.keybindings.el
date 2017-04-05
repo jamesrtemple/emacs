@@ -54,3 +54,11 @@
 (global-set-key (kbd "<wheel-right>") 'my/scroll-left)
 (global-set-key (kbd "<double-wheel-right>") 'my/scroll-left)
 (global-set-key (kbd "<triple-wheel-right>") 'my/scroll-left)
+
+
+;;HYDRAS
+(global-set-key (kbd "s-.") 'hydra-window-menu/body)
+(global-set-key (kbd "<f1>") 'yt-hydra/help/body)
+(global-set-key (kbd "s-r") 'hydra-register-menu/body)
+(global-set-key (kbd "s-p") 'hydra-project/body)
+

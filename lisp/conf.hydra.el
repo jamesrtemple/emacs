@@ -20,11 +20,6 @@ _k_: move up  _j_: move down  _h_: move left  _l_: move right
   ("l" windmove-right)
   ("q" nil "quit" :color blue))
 
-(global-set-key (kbd "s-.") 'hydra-window-menu/body)
-
-
-
-
 (defhydra yt-hydra/help (:color blue :hint nil)
   "
 _f_unction: Documentation for a function
@@ -33,11 +28,6 @@ _i_nfo: info mode"
   ("f" describe-function)
   ("v" describe-variable)
   ("i" helm-info-org))
-
-(global-set-key (kbd "<f1>") 'yt-hydra/help/body)
-
-
-
 
 
 (defhydra hydra-project (:color blue :hint nil :idle 0.4)
@@ -100,4 +90,3 @@ _i_nfo: info mode"
         ("X"   fixmee-mode)
         ("x"   fixmee-view-listing))
 
-(global-set-key (kbd "s-p") 'hydra-project/body)
