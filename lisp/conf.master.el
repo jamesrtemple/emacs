@@ -33,11 +33,11 @@
 (package-initialize)
 
 ;;THEME STUFF
-(load-theme 'gruvbox t)
+;;(load-theme 'gruvbox t)
+(load-theme 'seti t)
 ;;(load-theme 'gotham t)
 ;;(color-theme-sanityinc-tomorrow-night)
 
-(setq tabbar-background-color "#263438") ;; the color of the tabbar background
 (window-numbering-mode)
 (electric-pair-mode t)
 
