@@ -1,5 +1,3 @@
-;;NEOTREE
-
 (require 'neotree)
 (require 'all-the-icons)
 
@@ -10,10 +8,8 @@
 ;; change root automatically when running `projectile-switch-project`
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
-(global-set-key [f8] 'neotree-toggle)
-
-;;(setq neo-theme (if window-system 'icons 'nerd)) ; 'classic, 'nerd, 'ascii, 'arrow
-(setq neo-theme 'nerd) ; 'classic, 'nerd, 'ascii, 'arrow
+ ; 'classic, 'nerd, 'ascii, 'arrow
+(setq neo-theme (if window-system 'icons 'nerd))
 
 (setq neo-vc-integration '(face char))
 
