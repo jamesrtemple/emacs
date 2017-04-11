@@ -24,7 +24,7 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
-  (fringe-mode 0)                                   ;;Enable fringes
+  (fringe-mode 15)                                  ;;Enable fringes
   (set-frame-size (selected-frame) 90 50))
 
 ;;MELPA
@@ -33,10 +33,7 @@
 (package-initialize)
 
 ;;THEME STUFF
-;;(load-theme 'gruvbox t)
 (load-theme 'seti t)
-;;(load-theme 'gotham t)
-;;(color-theme-sanityinc-tomorrow-night)
 
 (window-numbering-mode)
 (electric-pair-mode t)
@@ -60,14 +57,5 @@
 (load "conf.typescript")
 (load "conf.projectile")
 (load "conf.keybindings")
-
-;; Make flycheck popup on the bottom of the screen
-(add-to-list 'display-buffer-alist
-             `(,(rx bos "*Flycheck errors*" eos)
-              (display-buffer-reuse-window
-               display-buffer-in-side-window)
-              (side            . bottom)
-              (reusable-frames . visible)
-              (window-height   . 0.33)))
 
 (winner-mode 1)
