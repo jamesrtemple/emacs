@@ -1,9 +1,9 @@
-;;TYPESCRIPT
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
   (flycheck-mode +1)
   (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (flycheck-add-next-checker 'typescript-tide '(t . typescript-tslint) 'append)
   (eldoc-mode +1)
   (tide-hl-identifier-mode +1)
   ;; company is an optional dependency. You have to
@@ -20,4 +20,3 @@
 
 ;; format options
 (setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
-;;END TYPESCRIPT
