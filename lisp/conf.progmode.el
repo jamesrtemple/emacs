@@ -19,4 +19,7 @@
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 
 ;;LINE NUMBERS
-(setq linum-format " %2d ")
+(setq linum-format " %2d")
+
+(set-face-attribute 'fringe nil :background "#151718" :foreground "#3F3F3F")
+(set-face-attribute 'linum nil :background "#151718")
