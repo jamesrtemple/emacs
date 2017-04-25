@@ -24,7 +24,7 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
-  (fringe-mode 15)                                  ;;Enable fringes
+  (fringe-mode 0)                                   ;;Enable fringes
   (set-frame-size (selected-frame) 90 50))
 
 ;;MELPA
@@ -33,7 +33,9 @@
 (package-initialize)
 
 ;;THEME STUFF
-(load-theme 'seti t)
+;(load-theme 'ample t)
+(load-theme 'darktooth t)
+;;(load-theme 'ujelly t)
 
 (window-numbering-mode)
 (electric-pair-mode t)

@@ -1,5 +1,4 @@
 (require 'neotree)
-(require 'all-the-icons)
 
 ;; every time when the neotree window is  opened, it will try to find current
 ;; file and jump to node.
@@ -11,6 +10,8 @@
  ; 'classic, 'nerd, 'ascii, 'arrow
 (setq neo-theme (if window-system 'icons 'nerd))
 
+;;(setq doom-neotree-enable-file-icons t)
+
 (setq neo-vc-integration '(face char))
 
 (setq neo-toggle-window-keep-p t)
@@ -20,6 +21,7 @@
 ;;(add-hook 'neotree-mode-hook (lambda () (setq-local mode-line-format nil)))
 
 ;; face customizations
+
 
 (set-face-attribute 'neo-vc-edited-face nil
                     :foreground "#E2C08D")
