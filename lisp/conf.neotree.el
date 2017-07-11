@@ -8,9 +8,7 @@
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
  ; 'classic, 'nerd, 'ascii, 'arrow
-(setq neo-theme (if window-system 'icons 'nerd))
-
-;;(setq doom-neotree-enable-file-icons t)
+(setq neo-theme (if window-system 'classic 'nerd))
 
 (setq neo-vc-integration '(face char))
 
@@ -21,14 +19,12 @@
 ;;(add-hook 'neotree-mode-hook (lambda () (setq-local mode-line-format nil)))
 
 ;; face customizations
-
-
 (set-face-attribute 'neo-vc-edited-face nil
                     :foreground "#E2C08D")
 
 (set-face-attribute 'neo-vc-added-face nil
                     :foreground "green4")
 
-(setq neo-window-width 50)
+(setq neo-window-width 60)
 
-(setq neo-window-fixed-size nil)
+(setq neo-window-fixed-size 't)

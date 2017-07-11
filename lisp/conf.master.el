@@ -33,9 +33,18 @@
 (package-initialize)
 
 ;;THEME STUFF
-;(load-theme 'ample t)
-(load-theme 'darktooth t)
-;;(load-theme 'ujelly t)
+;;(load-theme 'ample t)
+;;(load-theme 'darktooth t)
+(load-theme 'ujelly t)
+
+;;(require 'color-theme-sanityinc-tomorrow)
+;;(color-theme-sanityinc-tomorrow-bright)
+;; M-x color-theme-sanityinc-tomorrow-day
+;; M-x color-theme-sanityinc-tomorrow-night
+;; M-x color-theme-sanityinc-tomorrow-blue
+;; M-x color-theme-sanityinc-tomorrow-bright
+;; M-x color-theme-sanityinc-tomorrow-eighties
+
 
 (window-numbering-mode)
 (electric-pair-mode t)
@@ -61,3 +70,7 @@
 (load "conf.keybindings")
 
 (winner-mode 1)
+
+
+(require 'less-css-mode)
+(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
