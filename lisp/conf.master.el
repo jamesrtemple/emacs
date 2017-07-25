@@ -27,6 +27,7 @@
   (fringe-mode 0)                                   ;;Enable fringes
   (set-frame-size (selected-frame) 90 50))
 
+
 ;;MELPA
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -36,7 +37,6 @@
 ;;(load-theme 'ample t)
 ;;(load-theme 'darktooth t)
 (load-theme 'ujelly t)
-
 ;;(require 'color-theme-sanityinc-tomorrow)
 ;;(color-theme-sanityinc-tomorrow-bright)
 ;; M-x color-theme-sanityinc-tomorrow-day
@@ -70,7 +70,6 @@
 (load "conf.keybindings")
 
 (winner-mode 1)
-
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))

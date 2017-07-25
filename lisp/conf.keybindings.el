@@ -14,6 +14,7 @@
 (global-set-key (kbd "s-y") 'helm-yas-complete)
 
 (global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-c \C-l" 'org-insert-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
