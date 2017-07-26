@@ -23,7 +23,7 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (less-css-mode material-theme color-theme-sanityinc-tomorrow git-timemachine ujelly-theme darktooth-theme cyberpunk-theme window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling seti-theme rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines osx-pseudo-daemon org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet gotham-theme git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring ample-theme all-the-icons-dired ag ace-window ace-jump-mode)))
+    (highlight-indent-guides less-css-mode material-theme color-theme-sanityinc-tomorrow git-timemachine ujelly-theme darktooth-theme cyberpunk-theme window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling seti-theme rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines osx-pseudo-daemon org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet gotham-theme git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring ample-theme all-the-icons-dired ag ace-window ace-jump-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

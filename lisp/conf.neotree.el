@@ -8,7 +8,8 @@
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
  ; 'classic, 'nerd, 'ascii, 'arrow
-(setq neo-theme (if window-system 'classic 'nerd))
+(setq neo-theme (if window-system 'nerd 'ascii))
+
 
 (setq neo-vc-integration '(face char))
 

@@ -20,3 +20,10 @@
 ;;(set-face-attribute 'fringe nil :background "#151718" :foreground "#3F3F3F")
 ;;(add-hook 'linum-mode-hook (lambda() 
 ;;    (set-face-attribute 'linum nil :background "#151718")))
+
+
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+(setq highlight-indent-guides-method 'column)
+
+(add-hook 'prog-mode-hook 'show-paren-mode)
+
