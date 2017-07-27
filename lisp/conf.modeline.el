@@ -1,7 +1,7 @@
 (require 'powerline)
 (powerline-center-theme)
 (setq powerline-default-separator 'wave)
-(setq powerline-height 12)
+;;(setq powerline-height 12)
 (setq powerline-raw " ")
 (setq ns-use-srgb-colorspace nil)
 

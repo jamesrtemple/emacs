@@ -4,7 +4,7 @@
        (setenv "PATH" (concat "/usr/local/bin:/usr/local/sbin:" (getenv "PATH")))
        (setq exec-path (append exec-path '("/usr/local/bin")))
        (setq mac-command-modifier 'control)
-       (osx-pseudo-daemon-mode)
+       ;(osx-pseudo-daemon-mode)
        (set-frame-font "Menlo-14")
        (setq-default line-spacing 0.3)
        (setq ns-use-srgb-colorspace nil)
