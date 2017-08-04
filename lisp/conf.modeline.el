@@ -1,20 +1,15 @@
 (require 'powerline)
 (powerline-center-theme)
-(setq powerline-default-separator 'wave)
-;;(setq powerline-height 12)
+
+(setq powerline-default-separator 'curve)
 (setq powerline-raw " ")
 (setq ns-use-srgb-colorspace nil)
 
-;;(defun remove-mode-line-box (&rest args)
-;;  (set-face-attribute 'mode-line nil :box nil :underline nil)
-;;  (set-face-attribute 'mode-line-inactive nil :box nil :underline nil))
-;;(remove-mode-line-box)
+(set-face-attribute 'mode-line nil
+                    :foreground "Black"
+                    :background "DarkOrange4")
 
-(require 'delight)
-(delight 'company-mode nil 'company)
-(delight 'git-gutter-mode nil 'git-gutter)
-(delight 'helm-mode nil 'helm)
-(delight 'tide-mode nil 'tide)
-(delight 'eldoc-mode nil 'eldoc)
-(delight 'all-the-icons-dired-mode nil 'all-the-icons-dired)
-(delight 'tern-mode nil 'tern)
+(require 'dim)
+(dim-minor-name 'yas-minor-mode "")
+(dim-minor-name 'helm-mode "")
+(dim-minor-name 'org-indent-mode "")

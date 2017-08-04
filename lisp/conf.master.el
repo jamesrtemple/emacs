@@ -35,16 +35,10 @@
 
 ;;THEME STUFF
 ;;(load-theme 'ample t)
-;;(load-theme 'darktooth t)
-(load-theme 'ujelly t)
-;;(require 'color-theme-sanityinc-tomorrow)
-;;(color-theme-sanityinc-tomorrow-bright)
-;; M-x color-theme-sanityinc-tomorrow-day
-;; M-x color-theme-sanityinc-tomorrow-night
-;; M-x color-theme-sanityinc-tomorrow-blue
-;; M-x color-theme-sanityinc-tomorrow-bright
-;; M-x color-theme-sanityinc-tomorrow-eighties
-
+;;(load-theme 'ujelly t)
+;;(load-theme 'gruber-darker t)
+;;(load-theme 'clues t)
+(load-theme 'darkburn t)
 
 (window-numbering-mode)
 (electric-pair-mode t)
