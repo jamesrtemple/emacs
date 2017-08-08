@@ -26,6 +26,6 @@
 (set-face-attribute 'neo-vc-added-face nil
                     :foreground "green4")
 
-(setq neo-window-width 60)
+(setq neo-window-width 50)
 
 (setq neo-window-fixed-size 't)
