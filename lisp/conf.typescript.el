@@ -29,3 +29,5 @@
               (side            . bottom)
               (reusable-frames . visible)
               (window-height   . 0.33)))
+
+(setq-default typescript-indent-level 2)

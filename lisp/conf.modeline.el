@@ -13,3 +13,5 @@
 (dim-minor-name 'yas-minor-mode "")
 (dim-minor-name 'helm-mode "")
 (dim-minor-name 'org-indent-mode "")
+(dim-minor-name 'company-mode "")
+(dim-minor-name 'helm--minor-mode "")

@@ -9,6 +9,7 @@
 (setq mouse-wheel-follow-mouse 't)
 (setq scroll-step 1)
 (setq-default indent-tabs-mode nil)
+(setq tab-width 2)
 (setq tab-stop-list (number-sequence 4 120 4))
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
