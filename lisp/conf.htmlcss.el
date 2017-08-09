@@ -13,5 +13,4 @@
 (setq web-mode-code-indent-offset 2)
 
 (setq web-mode-enable-current-element-highlight t)
-(eval-after-load "web-mode"
-  '(set-face-background 'web-mode-current-element-highlight-face "DarkOrange3"))
+(eval-after-load "web-mode" '(set-face-background 'web-mode-current-element-highlight-face "DodgerBlue4"))
