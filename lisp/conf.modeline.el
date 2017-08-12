@@ -5,9 +5,10 @@
 (setq powerline-raw " ")
 (setq ns-use-srgb-colorspace nil)
 
-(set-face-attribute 'mode-line nil
-                    :foreground "Black"
-                    :background "DodgerBlue4")
+;;(set-face-attribute 'mode-line nil
+;;                    :foreground "Black"
+;;                    :background "DodgerBlue4")
+
 
 (require 'dim)
 (dim-minor-name 'yas-minor-mode "")

@@ -39,7 +39,8 @@
 ;;(load-theme 'ujelly t)
 ;;(load-theme 'gruber-darker t)
 ;;(load-theme 'clues t)
-(load-theme 'darkburn t)
+;;(load-theme 'darkburn t)
+(load-theme 'tango-plus t)
 
 (window-numbering-mode)
 (electric-pair-mode t)
