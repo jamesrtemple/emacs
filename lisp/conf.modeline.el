@@ -9,6 +9,7 @@
                     :foreground "Black"
                     :background "DodgerBlue4")
 
+
 (require 'dim)
 (dim-minor-name 'yas-minor-mode "")
 (dim-minor-name 'helm-mode "")

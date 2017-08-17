@@ -25,7 +25,8 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
-  (fringe-mode 0)                                   ;;Enable fringes
+  (fringe-mode 10)                                   ;;Enable fringes
+  (set-face-attribute 'fringe nil :background nil)
   (set-frame-size (selected-frame) 90 50))
 
 
@@ -40,6 +41,7 @@
 ;;(load-theme 'gruber-darker t)
 ;;(load-theme 'clues t)
 (load-theme 'darkburn t)
+;;(load-theme 'tango-plus t)
 
 (window-numbering-mode)
 (electric-pair-mode t)

@@ -12,6 +12,7 @@
 (global-set-key (kbd "s-o") 'win-switch-enter)
 (global-set-key (kbd "s-j") 'ace-jump-mode)
 (global-set-key (kbd "C-j") 'ace-jump-mode)
+(define-key org-mode-map (kbd "C-j") 'ace-jump-mode)
 (global-set-key (kbd "s-y") 'helm-yas-complete)
 
 (global-set-key "\C-cl" 'org-store-link)
@@ -22,7 +23,6 @@
 
 (define-key company-mode-map (kbd "s-;") 'helm-company)
 (define-key company-active-map (kbd "s-;") 'helm-company)
-(define-key org-mode-map (kbd "C-j") 'ace-jump-mode)
 
 (global-set-key (kbd "s-g") 'magit-status)
 
