@@ -11,6 +11,8 @@
 (global-set-key (kbd "s-n") 'neotree-toggle)
 (global-set-key (kbd "s-o") 'win-switch-enter)
 (global-set-key (kbd "s-j") 'ace-jump-mode)
+(global-set-key (kbd "C-j") 'ace-jump-mode)
+(define-key org-mode-map (kbd "C-j") 'ace-jump-mode)
 (global-set-key (kbd "s-y") 'helm-yas-complete)
 
 (global-set-key "\C-cl" 'org-store-link)
