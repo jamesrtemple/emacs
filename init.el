@@ -24,6 +24,10 @@
  '(package-selected-packages
    (quote
     (tango-plus-theme color-theme-sanityinc-tomorrow dim darkburn-theme clues-theme gruber-darker-theme highlight-indent-guides less-css-mode git-timemachine ujelly-theme window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling seti-theme rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring ample-theme all-the-icons-dired ag ace-window ace-jump-mode)))
+ '(powerline-default-separator (quote slant))
+ '(powerline-display-buffer-size nil)
+ '(powerline-display-hud nil)
+ '(powerline-display-mule-info nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -45,7 +49,9 @@
      (320 . "#de935f")
      (340 . "#f0c674")
      (360 . "#b5bd68"))))
- '(vc-annotate-very-old-color nil))
+ '(vc-annotate-very-old-color nil)
+ '(win-switch-idle-time 15)
+ '(win-switch-window-threshold 1))
 
 ;;JUMP TO PERSONAL CONFIGURATION
 (add-to-list 'load-path "~/.emacs.d/lisp/")

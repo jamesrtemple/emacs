@@ -1,21 +1,18 @@
 (require 'powerline)
 (powerline-center-theme)
 
-(setq powerline-default-separator 'slant)
+(setq powerline-default-separator 'wave)
 (setq powerline-raw " ")
 (setq ns-use-srgb-colorspace nil)
 
 (set-face-attribute 'mode-line nil
                     :foreground "Black"
-                    :background "DodgerBlue4")
+                    :background "SteelBlue4")
 
+(set-face-attribute 'powerline-active1 nil
+                    :foreground "Black"
+                    :background "SteelBlue4")
 
-(require 'dim)
-(dim-minor-name 'yas-minor-mode "")
-(dim-minor-name 'helm-mode "")
-(dim-minor-name 'org-indent-mode "")
-(dim-minor-name 'company-mode "")
-(dim-minor-name 'helm--minor-mode "")
-(dim-minor-name 'tide-mode "")
-(dim-minor-name 'git-gutter-mode "")
-(dim-minor-name 'eldoc-mode "")
+(set-face-attribute 'powerline-active2 nil
+                    :foreground "Black"
+                    :background "SteelBlue3")

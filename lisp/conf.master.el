@@ -26,9 +26,7 @@
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
   (fringe-mode 10)                                   ;;Enable fringes
-  (set-face-attribute 'fringe nil :background nil)
   (set-frame-size (selected-frame) 90 50))
-
 
 ;;MELPA
 (require 'package)
@@ -67,6 +65,13 @@
 (load "conf.keybindings")
 
 (winner-mode 1)
+(set-face-attribute 'fringe nil :background nil)
+(diminish 'git-gutter-mode "")
+(diminish 'helm-mode "")
+(diminish 'company-mode "")
+(diminish 'yas-minor-mode "")
+(diminish 'pandoc-mode "")
+(diminish 'tern-mode "")
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
