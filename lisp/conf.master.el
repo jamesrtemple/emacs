@@ -72,6 +72,10 @@
 (diminish 'yas-minor-mode "")
 (diminish 'pandoc-mode "")
 (diminish 'tern-mode "")
+(diminish 'eldoc-mode "")
+(diminish 'visual-line-mode
+  (concat " " (propertize (fontawesome "refresh")
+                          'face '(:family "FontAwesome" :background "SteelBlue3"))))
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
