@@ -14,6 +14,7 @@
 (setq helm-apropos-fuzzy-match t)
 (setq helm-lisp-fuzzy-completion t)
 (setq helm-completion-in-region-fuzzy-match t)
+(setq helm-buffer-max-length 50)
 
 ;; Make helm open along the bottom of the frame across the whole width.
 (add-to-list 'display-buffer-alist
