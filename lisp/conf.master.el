@@ -26,7 +26,7 @@
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
   (fringe-mode 10)                                   ;;Enable fringes
-  (set-frame-size (selected-frame) 90 50))
+  (set-frame-size (selected-frame) 100 50))
 
 ;;MELPA
 (require 'package)
@@ -35,11 +35,9 @@
 
 ;;THEME STUFF
 ;;(load-theme 'ample t)
-;;(load-theme 'ujelly t)
 ;;(load-theme 'gruber-darker t)
-;;(load-theme 'clues t)
-(load-theme 'darkburn t)
-;;(load-theme 'tango-plus t)
+;;(load-theme 'darkburn t)
+(load-theme 'ample-zen t)
 
 (window-numbering-mode)
 (electric-pair-mode t)
@@ -74,8 +72,8 @@
 (diminish 'tern-mode "")
 (diminish 'eldoc-mode "")
 (diminish 'visual-line-mode
-  (concat " " (propertize (fontawesome "refresh")
-                          'face '(:family "FontAwesome" :background "SteelBlue3"))))
+   (concat " " (propertize (fontawesome "refresh")
+                           'face '(:family "FontAwesome"))))
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
