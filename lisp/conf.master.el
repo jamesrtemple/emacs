@@ -25,7 +25,7 @@
 (when (display-graphic-p)
   (scroll-bar-mode 0)                               ;;Set Scroll bars on or off
   (tool-bar-mode 0)                                 ;;Set toolbar off
-  (fringe-mode 10)                                   ;;Enable fringes
+  (fringe-mode 10)                                  ;;Enable fringes
   (set-frame-size (selected-frame) 100 50))
 
 ;;MELPA
