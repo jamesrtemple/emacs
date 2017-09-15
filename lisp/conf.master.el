@@ -36,8 +36,8 @@
 ;;THEME STUFF
 ;;(load-theme 'ample t)
 ;;(load-theme 'gruber-darker t)
-;;(load-theme 'darkburn t)
-(load-theme 'ample-zen t)
+(load-theme 'darkburn t)
+;;(load-theme 'ample-zen t)
 
 (window-numbering-mode)
 (electric-pair-mode t)
