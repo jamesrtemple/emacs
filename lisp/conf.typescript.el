@@ -30,4 +30,4 @@
               (reusable-frames . visible)
               (window-height   . 0.33)))
 
-(setq-default typescript-indent-level 2)
+(setq-default typescript-indent-level 4)
