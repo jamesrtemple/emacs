@@ -12,19 +12,6 @@
 
 (require 'company-css)
 
-;; ;; Add yasnippet support for all company backends
-;; ;; https://github.com/syl20bnr/spacemacs/pull/179
-;; (defun autocomplete-show-snippets ()
-;;   "Show snippets in autocomplete popup."
-;;   (let ((backend (car company-backends)))
-;;     (unless (listp backend)
-;;       (setcar company-backends `(,backend :with company-yasnippet company-files)))))
-
-;; ;; See http://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html
-;; ;; for what this line means
-;; (add-hook 'after-change-major-mode-hook 'autocomplete-show-snippets)
-
-
 ;; Completing point by some yasnippet key
 (defun yas-ido-expand ()
   "Lets you select (and expand) a yasnippet key"
