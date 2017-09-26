@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: Jasmine it block
 # key: jas-it
+# group: Jasmine
 # --
 it('$1', () => {
     $0

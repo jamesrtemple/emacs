@@ -1,6 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: Angular1 forEach
 # key: ng-forEach
+# group: Angular1.angular
 # --
 angular.forEach(${1:values}, function(value, key, obj) {
     $0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: function: Standard variable assigned function
+# key: fn
+# group: Functions
+# --
+let $1 = function($2) {
+  $0
+};

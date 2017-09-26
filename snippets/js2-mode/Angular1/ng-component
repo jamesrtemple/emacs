@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Angular1 Component in IIFE
+# key: ng-component
+# group: Angular1.Component
+# --
+(function () {
+    var ${1:ComponentName}Directive = function ($2) {
+        return {
+            restrict: "E",
+            templateUrl: '$3',
+            scope: {},
+            controller: function ($scope) {},
+            link: function (scope, element, attrs) {}
+        };
+    };
+
+    uitkTreeDirective.$inject = [$2];
+
+    angular.module('$5', [$6])
+        .directive('$1', $1Directive);
+})();

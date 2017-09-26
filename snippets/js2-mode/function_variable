@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: function: Standard variable assigned function
-# key: fn
-# --
-let $1 = function($2) {
-  $0
-};

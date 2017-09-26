@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: comment function
+# key: com
+# group: Comments
+# --
+/**
+* $1
+* @param {${2:type}} ${3:name}
+* @returns {${4:type}}
+*/

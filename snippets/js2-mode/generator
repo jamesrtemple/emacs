@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: generator
-# key: generator
-# --
-function* ${1:foo}() {
-  var index = 0;
-  while (index <= 2)
-    yield index++;
-}

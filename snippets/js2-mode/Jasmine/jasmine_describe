@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: Jasmine Describe block
 # key: jas-describe
+# group: Jasmine
 # --
 describe('$1', () => {
 

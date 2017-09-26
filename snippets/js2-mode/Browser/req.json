@@ -1,5 +1,7 @@
 # -*- mode: snippet -*-
-#name : json
+#name : Request JSON
+#key: requestjson
+#group: Browser
 # --
 new Request.JSON({
   onSuccess: function(responseJSON, responseText) {

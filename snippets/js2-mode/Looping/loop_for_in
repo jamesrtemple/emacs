@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: for loop over keys in collection
+# key: forin
+# group: Looping
+# --
+for(${1:key} in ${2:collection}) {
+  $0
+}

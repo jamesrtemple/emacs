@@ -1,5 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: Angular1 Copy
 # key: ng-copy
+# group: Angular1.angular
 # --
 angular.copy(${1:source});$0

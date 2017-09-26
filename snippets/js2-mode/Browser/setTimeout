@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: setTimeout
 # key: setTimeout
+# group: Browser
 # --
 setTimeout(function ${1:foo}() {
   `yas-selected-text`$0

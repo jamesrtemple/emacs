@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Comment jsdoc type-inline-comment
+# key: @ty
+# condition: (not (= (js2-node-type (js2-node-at-point)) js2-COMMENT))
+# group: Comments
+# --
+/** @type {${type}} */

@@ -1,5 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: Angular1 Element
 # key: ng-element
+# group: Angular1.angular
 # --
 angluar.element(${1:query});$0

@@ -9,9 +9,14 @@
   (setq neo-vc-integration '(face char))
   (setq neo-toggle-window-keep-p t)
   (setq neo-force-change-root t)
-  ;;(add-hook 'neotree-mode-hook (lambda () (setq-local mode-line-format nil)))
+  
+  
   ;; face customizations
   (set-face-attribute 'neo-vc-edited-face nil :foreground "#E2C08D")
   (set-face-attribute 'neo-vc-added-face nil :foreground "green4")
   (setq neo-window-width 50)
   (setq neo-window-fixed-size nil))
+
+(add-hook 'neotree-mode-hook
+          (lambda () (visual-line-mode nil)))
+

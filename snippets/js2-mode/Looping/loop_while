@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: while
+# key: while
+# group: Looping
+# --
+while(${1:condition}) {
+  $0
+}
