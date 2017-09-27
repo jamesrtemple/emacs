@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ngClass
+# key: ngClass
+# --
+[ngClass]="{'${1:className}': ${2:booleanCondition}}"

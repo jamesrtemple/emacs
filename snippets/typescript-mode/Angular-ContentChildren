@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular @ContentChildren
+# key: contentchildren
+# --
+@ContentChildren(${1:Component}) ${2:varName}: QueryList<$1>;
