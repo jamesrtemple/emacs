@@ -1,11 +1,11 @@
-;;MARKDOWN MODE
+ ;;MARKDOWN MODE
 (require 'markdown-mode)
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(setq markdown-command "/usr/local/bin/markdown")
+(setq markdown-command "pandoc")
 (setq markdown-header-scaling 1)
 
 (set-face-attribute 'markdown-header-face nil

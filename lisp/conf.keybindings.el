@@ -1,6 +1,6 @@
-(setq mac-command-modifier 'control)
+(setq mac-command-modifier 'super)
 (setq mac-option-modifier 'meta)
-(setq mac-control-modifier 'super)
+(setq mac-control-modifier 'control)
 
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -14,6 +14,7 @@
 (global-set-key (kbd "C-j") 'ace-jump-mode)
 (define-key org-mode-map (kbd "C-j") 'ace-jump-mode)
 (global-set-key (kbd "s-y") 'helm-yas-complete)
+(global-set-key (kbd "s-s") 'helm-swoop)
 
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-c \C-l" 'org-insert-link)
