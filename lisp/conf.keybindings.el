@@ -66,3 +66,7 @@
 (global-set-key (kbd "s-r") 'hydra-register-menu/body)
 (global-set-key (kbd "s-p") 'hydra-project/body)
 
+
+;;IMENU LIST
+(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
+(setq imenu-list-focus-after-activation t)
