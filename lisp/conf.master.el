@@ -39,6 +39,7 @@
 ;;(load-theme 'darkburn t)
 (load-theme 'ample-zen t)
 ;;(load-theme 'clues t)
+;;(load-theme 'tango-plus t)
 
 (window-numbering-mode)
 (electric-pair-mode t)
@@ -65,6 +66,7 @@
 
 (winner-mode 1)
 (set-face-attribute 'fringe nil :background nil)
+
 (diminish 'git-gutter-mode "")
 (diminish 'helm-mode "")
 (diminish 'company-mode "")
