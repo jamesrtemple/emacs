@@ -12,7 +12,7 @@
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
 		    :height 1.2
-                    :foreground "tomato3"
+                    :foreground "gray60"
 		    :weight 'light)
 
 (set-face-attribute 'markdown-header-face-1 nil
