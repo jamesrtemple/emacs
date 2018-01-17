@@ -36,7 +36,7 @@
 ;;THEME STUFF
 ;;(load-theme 'ample t)
 ;;(load-theme 'gruber-darker t)
-;;(load-theme 'darkburn t)
+(load-theme 'darkburn t)
 (load-theme 'ample-zen t)
 ;;(load-theme 'clues t)
 ;;(load-theme 'tango-plus t)
@@ -80,3 +80,4 @@
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+
