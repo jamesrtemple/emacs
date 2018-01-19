@@ -11,8 +11,7 @@
                (vm-imap . vm-visit-imap-folder-other-frame)
                (gnus . org-gnus-no-new-news)
                (file . find-file)
-               (wl . wl-other-frame)))
-      )
+               (wl . wl-other-frame))))
 
 (set-face-attribute 'org-level-1 nil
                     :height 1.2
