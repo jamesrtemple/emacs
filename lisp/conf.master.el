@@ -34,12 +34,9 @@
 (package-initialize)
 
 ;;THEME STUFF
-;;(load-theme 'ample t)
-;;(load-theme 'gruber-darker t)
-(load-theme 'darkburn t)
-(load-theme 'ample-zen t)
-;;(load-theme 'clues t)
-;;(load-theme 'tango-plus t)
+;; (require 'color-theme-sanityinc-tomorrow)
+;; (color-theme-sanityinc-tomorrow-night)
+(load-theme 'seti t)
 
 (window-numbering-mode)
 (electric-pair-mode t)

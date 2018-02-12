@@ -14,7 +14,7 @@
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
    (vector "#c5c8c6" "#cc6666" "#b5bd68" "#f0c674" "#81a2be" "#b294bb" "#8abeb7" "#373b41"))
- '(custom-enabled-themes (quote (sanityinc-tomorrow-bright)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
  '(custom-safe-themes
    (quote
     ("d61fc0e6409f0c2a22e97162d7d151dee9e192a90fa623f8d6a071dbf49229c6" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" default)))
@@ -23,7 +23,7 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (diminish imenu-list tango-plus-theme clues-theme helm-swoop helm-dash dash-at-point evil ample-zen-theme fontawesome color-theme-sanityinc-tomorrow dim darkburn-theme gruber-darker-theme highlight-indent-guides less-css-mode git-timemachine window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling seti-theme rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring ample-theme all-the-icons-dired ag ace-window ace-jump-mode)))
+    (seti-theme diminish imenu-list helm-swoop helm-dash dash-at-point fontawesome color-theme-sanityinc-tomorrow dim highlight-indent-guides less-css-mode git-timemachine window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring all-the-icons-dired ag ace-window ace-jump-mode)))
  '(powerline-default-separator (quote slant))
  '(powerline-display-buffer-size nil)
  '(powerline-display-hud nil)

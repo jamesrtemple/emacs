@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "seti-theme" "seti-theme.el" (22749 15396 0
+;;;### (autoloads nil "seti-theme" "seti-theme.el" (23169 50525 0
 ;;;;;;  0))
 ;;; Generated autoloads from seti-theme.el
 

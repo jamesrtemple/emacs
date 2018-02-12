@@ -35,6 +35,12 @@
                     :width 'condensed
 		    :inherit markdown-header-face)
 
+(set-face-attribute 'markdown-code-face nil
+		    :height 0.8
+                    :width 'condensed
+		    :inherit 'markdown-code-face)
+
+
 (add-hook 'markdown-mode-hook 'flyspell-mode 1)
 
 ;;PANDOC

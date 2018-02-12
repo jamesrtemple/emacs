@@ -17,5 +17,5 @@
   (set-face-attribute 'neo-vc-edited-face nil :foreground "#E2C08D")
   (set-face-attribute 'neo-vc-added-face nil :foreground "green4")
 
-  (setq neo-window-width 50)
+  (setq neo-window-width 40)
   (setq neo-window-fixed-size t))
