@@ -9,10 +9,20 @@
 (setq markdown-open-command "/usr/local/bin/mark")
 (setq markdown-header-scaling 1)
 
+(set-face-attribute 'markdown-header-delimiter-face nil
+                    :height 0.2
+                    :foreground "sea green"
+                    :weight 'light)
+
+(set-face-attribute 'markdown-header-rule-face nil
+                    :height 1.0
+                    :foreground "sea green"
+                    :weight 'light)
+
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
 		    :height 1.2
-                    :foreground "gray60"
+                    :foreground "sea green"
 		    :weight 'light)
 
 (set-face-attribute 'markdown-header-face-1 nil
@@ -22,23 +32,34 @@
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-2 nil
-		    :height 1.0
+		    :height 1.2
                     :width 'condensed
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-3 nil
-		    :height 0.8
+		    :height 1.0
+                    :foreground "LightGoldenrod3"
                     :width 'condensed)
 
 (set-face-attribute 'markdown-header-face-4 nil
-		    :height 0.8
+		    :height 1.0
                     :width 'condensed
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-code-face nil
-		    :height 0.8
+		    :height 1.0
                     :width 'condensed
 		    :inherit 'markdown-code-face)
+
+(set-face-attribute 'markdown-bold-face nil
+                    :height 1.0
+                    :foreground "LightGoldenrod3"
+                    :weight 'light)
+
+(set-face-attribute 'markdown-italic-face nil
+                    :height 1.0
+                    :foreground "LightGoldenrod2"
+                    :weight 'light)
 
 
 (add-hook 'markdown-mode-hook 'flyspell-mode 1)
