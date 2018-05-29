@@ -78,3 +78,6 @@
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
 
+
+(set-face-foreground 'dired-directory "Goldenrod3")
+
