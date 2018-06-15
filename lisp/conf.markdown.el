@@ -10,19 +10,19 @@
 (setq markdown-header-scaling 1)
 
 (set-face-attribute 'markdown-header-delimiter-face nil
-                    :height 0.2
-                    :foreground "sea green"
+                    :height 1.0
+                    :foreground "medium sea green"
                     :weight 'light)
 
 (set-face-attribute 'markdown-header-rule-face nil
                     :height 1.0
-                    :foreground "sea green"
+                    :foreground "medium sea green"
                     :weight 'light)
 
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
 		    :height 1.2
-                    :foreground "sea green"
+                    :foreground "medium sea green"
 		    :weight 'light)
 
 (set-face-attribute 'markdown-header-face-1 nil
@@ -38,7 +38,7 @@
 
 (set-face-attribute 'markdown-header-face-3 nil
 		    :height 1.0
-                    :foreground "LightGoldenrod3"
+                    :foreground "sea green"
                     :width 'condensed)
 
 (set-face-attribute 'markdown-header-face-4 nil
