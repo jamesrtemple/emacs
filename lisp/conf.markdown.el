@@ -21,29 +21,21 @@
 
 (set-face-attribute 'markdown-header-face nil
 		    :inherit markdown-header-face
-		    :height 1.2
-                    :foreground "medium sea green"
+		    :height 1.0
+                    :foreground "tan3"
 		    :weight 'light)
 
 (set-face-attribute 'markdown-header-face-1 nil
 		    :height 1.4
-                    :weight 'medium
-                    :width 'condensed
+                    :weight 'ultra-bold
+                    :width 'ultra-expanded
+                    :foreground "tan1"
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-2 nil
 		    :height 1.2
-                    :width 'condensed
-		    :inherit markdown-header-face)
-
-(set-face-attribute 'markdown-header-face-3 nil
-		    :height 1.0
-                    :foreground "sea green"
-                    :width 'condensed)
-
-(set-face-attribute 'markdown-header-face-4 nil
-		    :height 1.0
-                    :width 'condensed
+                    :width 'normal
+                    :foreground "tan2"
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-code-face nil
