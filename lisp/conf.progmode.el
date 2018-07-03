@@ -1,6 +1,6 @@
 ;;GIT GUTTER
 (global-git-gutter-mode t)
-(git-gutter:linum-setup)
+
 (custom-set-variables '(git-gutter:update-interval 2))
 (setq git-gutter:window-width 1)
 (setq git-gutter:added-sign "|")
@@ -18,9 +18,6 @@
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook #'linum-mode)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
-
-;;LINE NUMBERS
-(setq linum-format " %2d ")
 
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'column)

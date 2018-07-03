@@ -34,9 +34,9 @@
 (package-initialize)
 
 ;;THEME STUFF
-;; (require 'color-theme-sanityinc-tomorrow)
-;; (color-theme-sanityinc-tomorrow-night)
-(load-theme 'seti t)
+(require 'color-theme-sanityinc-tomorrow)
+(color-theme-sanityinc-tomorrow-night)
+;; (load-theme 'seti t)
 
 (window-numbering-mode)
 (electric-pair-mode t)

@@ -1,7 +1,7 @@
 (when (display-graphic-p)
   (use-package powerline
     :config
-    (powerline-default-theme)
+    (powerline-center-theme)
     
     ;; bar, box, brace, butt, chamfer, contour, curve, rounded,
     ;; roundstub, slant, wave, zigzag, nil
