@@ -1,7 +1,7 @@
 ;;YASNIPPET
 ;;  Loaded before auto complete so that they can work together
 (require 'yasnippet)
-(setq yas-snippet-dirs "~/.emacs.d/snippets")
+;;(setq yas-snippet-dirs "~/.emacs.d/snippets")
 
 
 ;;COMPANY
