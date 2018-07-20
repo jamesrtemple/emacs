@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: React Component
+# key: component
+# --
+class $1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+    componentDidMount() {
+
+    }
+
+    componentWillUnmount() {
+
+    }
+    
+    render() {
+        return (
+            $0
+        );
+  }
+}

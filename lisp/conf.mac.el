@@ -7,7 +7,7 @@
        ;
        ;(osx-pseudo-daemon-mode)
        (set-frame-font "Inconsolata-16")
-       (setq-default line-spacing 0.2)
+       (setq-default line-spacing 0.0)
        (setq ns-use-srgb-colorspace nil)
        (set-terminal-coding-system 'utf-8)
        (set-keyboard-coding-system 'utf-8)
