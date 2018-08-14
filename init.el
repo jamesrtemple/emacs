@@ -26,7 +26,7 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (seti-theme diminish imenu-list helm-swoop helm-dash dash-at-point fontawesome color-theme-sanityinc-tomorrow dim highlight-indent-guides less-css-mode git-timemachine window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring all-the-icons-dired ag ace-window ace-jump-mode)))
+    (helm-ag seti-theme diminish imenu-list helm-swoop helm-dash dash-at-point fontawesome color-theme-sanityinc-tomorrow dim highlight-indent-guides less-css-mode git-timemachine window-numbering win-switch web-mode web-beautify use-package unicode-fonts tide tabbar smooth-scrolling rjsx-mode rainbow-mode rainbow-delimiters powerline pandoc-mode page-break-lines org-bullets neotree multiple-cursors multi-term markdown-mode magit karma json-mode js-comint jade impatient-mode helm-projectile helm-descbinds helm-company helm-c-yasnippet git-gutter expand-region exec-path-from-shell emmet-mode delight company-tern company-quickhelp browse-kill-ring all-the-icons-dired ag ace-window ace-jump-mode)))
  '(powerline-default-separator (quote slant))
  '(powerline-display-buffer-size nil)
  '(powerline-display-hud nil)

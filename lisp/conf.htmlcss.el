@@ -6,12 +6,12 @@
  
 ;;CSS
 (add-hook 'css-mode-hook #'rainbow-mode)
-(setq css-indent-offset 4)
+(setq css-indent-offset 2)
 
 ;;Web Mode
-(setq web-mode-markup-indent-offset 4)
-(setq web-mode-css-indent-offset 4)
-(setq web-mode-code-indent-offset 4)
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
 (setq web-mode-enable-current-element-highlight t)
 (eval-after-load "web-mode" '(set-face-background 'web-mode-current-element-highlight-face "DodgerBlue4"))
 
