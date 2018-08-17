@@ -61,14 +61,14 @@
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-3 nil
-		    :height 1.0
+		    :height 1.2
                     :width 'normal
                     :width 'ultra-expanded
                     :foreground my-secondary-lightmed
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-4 nil
-		    :height 1.0
+		    :height 1.2
                     :width 'normal
                     :width 'ultra-expanded
                     :foreground my-secondary-light
