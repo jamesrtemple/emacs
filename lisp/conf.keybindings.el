@@ -1,6 +1,6 @@
-;;(setq mac-command-modifier 'control)
-;;(setq mac-option-modifier 'meta)
-;;(setq mac-control-modifier 'command)
+(setq mac-command-modifier 'control)
+(setq mac-option-modifier 'meta)
+(setq mac-control-modifier 'command)
 
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
