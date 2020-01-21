@@ -38,15 +38,13 @@
 ;;(color-theme-sanityinc-tomorrow-night)
 (load-theme 'seti t)
 
-(window-numbering-mode)
+;(window-numbering-mode)
 (electric-pair-mode t)
 
 (load "conf.term")
 (load "conf.modeline")
 (load "conf.mac")
 (load "conf.dired")
-(load "conf.winswitch_ace")
-(load "conf.neotree")
 (load "conf.helm")
 (load "conf.progmode")
 (load "conf.text")

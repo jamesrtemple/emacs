@@ -10,7 +10,7 @@
 (setq markdown-header-scaling 1)
 
 (setq my-primary "#497681")
-(setq my-primary-light "#789298")
+(setq my-primary-light "#89298")
 (setq my-primary-lightmed "#497681")
 (setq my-primary-darkmed "#0B4552")
 (setq my-primary-dark "#01303B")
