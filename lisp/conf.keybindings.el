@@ -8,8 +8,8 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-(global-set-key (kbd "s-n") 'neotree-toggle)
-(global-set-key (kbd "s-o") 'win-switch-enter)
+;; (global-set-key (kbd "s-n") 'neotree-toggle)
+;; (global-set-key (kbd "s-o") 'win-switch-enter)
 (global-set-key (kbd "s-j") 'ace-jump-mode)
 (global-set-key (kbd "C-j") 'ace-jump-mode)
 (define-key org-mode-map (kbd "C-j") 'ace-jump-mode)
@@ -61,12 +61,16 @@
 
 
 ;;HYDRAS
-(global-set-key (kbd "s-.") 'hydra-window-menu/body)
-(global-set-key (kbd "<f1>") 'yt-hydra/help/body)
-(global-set-key (kbd "s-r") 'hydra-register-menu/body)
-(global-set-key (kbd "s-p") 'hydra-project/body)
+;; (global-set-key (kbd "s-.") 'hydra-window-menu/body)
+;; (global-set-key (kbd "<f1>") 'yt-hydra/help/body)
+;; (global-set-key (kbd "s-r") 'hydra-register-menu/body)
+;; (global-set-key (kbd "s-p") 'hydra-project/body)
 
 
 ;;IMENU LIST
 (global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
 (setq imenu-list-focus-after-activation t)
+
+
+;;REMAP SET MARK
+(global-set-key (kbd "C-x m") (lambda() (interactive) (push-mark nil nil 1)))

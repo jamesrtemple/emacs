@@ -1,10 +1,3 @@
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -26,7 +19,7 @@
  '(git-gutter:update-interval 2)
  '(package-selected-packages
    (quote
-    (helm-ag diminish imenu-list helm-swoop fontawesome dim highlight-indent-guides smooth-scrolling multiple-cursors multi-term markdown-mode json-mode jade helm-descbinds helm-company helm-c-yasnippet expand-region exec-path-from-shell delight company-tern company-quickhelp browse-kill-ring ag ace-window ace-jump-mode)))
+    (helm-ag diminish imenu-list helm-swoop fontawesome dim highlight-indent-guides smooth-scrolling multiple-cursors multi-term markdown-mode helm-descbinds helm-company helm-c-yasnippet expand-region exec-path-from-shell delight company-tern company-quickhelp browse-kill-ring ag ace-jump-mode)))
  '(powerline-default-separator (quote slant))
  '(powerline-display-buffer-size nil)
  '(powerline-display-hud nil)

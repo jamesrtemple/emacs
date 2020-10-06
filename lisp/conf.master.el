@@ -34,11 +34,8 @@
 (package-initialize)
 
 ;;THEME STUFF
-;;(require 'color-theme-sanityinc-tomorrow)
-;;(color-theme-sanityinc-tomorrow-night)
 (load-theme 'seti t)
 
-;(window-numbering-mode)
 (electric-pair-mode t)
 
 (load "conf.term")
@@ -46,17 +43,10 @@
 (load "conf.mac")
 (load "conf.dired")
 (load "conf.helm")
-(load "conf.progmode")
 (load "conf.text")
 (load "conf.org")
 (load "conf.markdown") ;;and pandoc
 (load "conf.completion")
-(load "conf.hydra")
-(load "conf.registers")
-(load "conf.htmlcss")
-(load "conf.javascript")
-(load "conf.typescript")
-(load "conf.projectile")
 (load "conf.keybindings")
 
 (winner-mode 1)
