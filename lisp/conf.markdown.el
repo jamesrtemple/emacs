@@ -45,32 +45,28 @@
 		    :weight 'light)
 
 (set-face-attribute 'markdown-header-face-1 nil
-		    :height 2.0
+		    :height 1.2
                     :weight 'ultra-bold
-                    :width 'ultra-expanded
                     :underline 'nil
                     :foreground my-secondary
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-2 nil
-		    :height 1.4
+		    :height 1.0
                     :width 'normal
-                    :width 'ultra-expanded
                     :underline 'nil
                     :foreground my-secondary-darkmed
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-3 nil
-		    :height 1.2
+		    :height 1.0
                     :width 'normal
-                    :width 'ultra-expanded
                     :foreground my-secondary-lightmed
 		    :inherit markdown-header-face)
 
 (set-face-attribute 'markdown-header-face-4 nil
-		    :height 1.2
+		    :height 1.0
                     :width 'normal
-                    :width 'ultra-expanded
                     :foreground my-secondary-light
 		    :inherit markdown-header-face)
 
