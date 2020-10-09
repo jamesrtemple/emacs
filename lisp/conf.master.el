@@ -30,7 +30,7 @@
 
 ;;MELPA
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;;THEME STUFF
@@ -74,3 +74,6 @@
   "execute region in an inferior shell"
   (interactive "r")
   (shell-command  (buffer-substring-no-properties start end)))
+
+
+(dired "~")
