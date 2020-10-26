@@ -9,7 +9,15 @@
 (setq markdown-open-command "/usr/local/bin/mark")
 (setq markdown-header-scaling 1)
 
-(setq markdown-enable-wiki-links t)
+
+
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (markdown-toggle-wiki-links)
+            (markdown-toggle-markup-hiding)
+            (markdown-toggle-url-hiding)))
+
+
 
 ;; (setq my-primary "#497681")
 ;; (setq my-primary-light "#89298")
