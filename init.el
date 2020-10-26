@@ -17,7 +17,7 @@
  '(frame-background-mode 'dark)
  '(git-gutter:update-interval 2)
  '(package-selected-packages
-   '(helm-ag diminish imenu-list helm-swoop fontawesome dim highlight-indent-guides smooth-scrolling multiple-cursors multi-term markdown-mode helm-descbinds helm-company helm-c-yasnippet expand-region exec-path-from-shell delight company-tern company-quickhelp browse-kill-ring ag ace-jump-mode))
+   '(powerline evil helm-ag diminish imenu-list helm-swoop fontawesome dim highlight-indent-guides smooth-scrolling multiple-cursors multi-term markdown-mode helm-descbinds helm-company helm-c-yasnippet expand-region exec-path-from-shell delight company-tern company-quickhelp browse-kill-ring ag ace-jump-mode))
  '(powerline-default-separator 'slant)
  '(powerline-display-buffer-size nil)
  '(powerline-display-hud nil)
