@@ -30,12 +30,11 @@
 
 ;;MELPA
 (require 'package)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 ;;THEME STUFF
-;;(load-theme 'seti t)
-(load-theme 'wheatgrass t)
+(load-theme 'seti t)
 
 (electric-pair-mode t)
 
@@ -63,6 +62,7 @@
 (diminish 'visual-line-mode
    (concat " " (propertize (fontawesome "refresh")
                            'face '(:family "FontAwesome"))))
+
 
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
