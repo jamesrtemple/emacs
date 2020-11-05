@@ -34,7 +34,7 @@
 (package-initialize)
 
 ;;THEME STUFF
-(load-theme 'seti t)
+(load-theme 'tsdh-dark t)
 
 (electric-pair-mode t)
 
